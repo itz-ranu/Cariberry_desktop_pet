@@ -18,7 +18,7 @@
 * **"Windows protected your PC"**: the installer isn't code-signed yet, so SmartScreen may show this once. Click **More info ➔ Run anyway**.
 * **Her tray icon** (bottom right, by the clock) shows her face. **Click it** for the control panel, or **right-click it** for quick actions. If you can't see it, click the **^** arrow and drag it onto the taskbar.
 * **Right-click her** on the desktop to open the same panel next to her.
-* She **starts with Windows** from now on. Turn that off in **Settings ➔ Her habits ➔ Launch at login**.
+* She **starts with Windows** from now on. Turn that off in **Settings ➔ Her ➔ Start with Windows**.
 * To uninstall: **Settings ➔ Apps ➔ Cariberry**. Her save and settings stay in `%APPDATA%\Cariberry` in case you come back.
 
 ---
