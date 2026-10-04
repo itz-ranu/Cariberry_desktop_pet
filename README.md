@@ -29,16 +29,18 @@
 ## 🎀 How to Download & Install 🎀
 
 ### 🍎 For macOS (Apple) Users
-1. Download this file: [`macos/Cariberry.dmg`](macos/Cariberry.dmg)
-2. Double-click it to open.
+1. **[⬇️ Click Here to Download Cariberry.dmg directly](https://github.com/itz-ranu/Cariberry_desktop_pet/raw/main/macos/Cariberry.dmg)** *(Do not click "Download ZIP" on GitHub!)*
+2. Double-click the downloaded file to open it.
 3. Drag the **Cariberry** app into your **Applications** folder.
-4. Open it from your Applications, and she will start with your Mac from then on! ✨ *(So easy!)*
+4. Open it from your Applications! ✨
+> 🛠️ **Mac Troubleshooting ("App is damaged"):** Since Cariberry is a brand new app, your Mac might say it's "damaged". Don't panic! It's completely safe. To fix this:
+> Open the **Terminal** app on your Mac, paste exactly `xattr -cr /Applications/Cariberry.app` and hit Enter. Now open Cariberry normally!
 
 ### 🪟 For Windows Users
-1. Download this file: [`windows/CariberrySetup.exe`](windows/CariberrySetup.exe)
-2. Double-click it to run the installer.
+1. **[⬇️ Click Here to Download CariberrySetup.exe directly](https://github.com/itz-ranu/Cariberry_desktop_pet/raw/main/windows/CariberrySetup.exe)** *(Do not click "Download ZIP" on GitHub!)*
+2. Double-click the downloaded file to run the installer.
 3. It installs just for you, opens Cariberry right away, and will start with Windows automatically! ✨
-*(Note: Windows might show a SmartScreen notice since it's super new, just click "Run anyway" to let her in! 💖)*
+> 🛠️ **Windows Troubleshooting ("Windows protected your PC"):** Windows SmartScreen sometimes blocks new apps. When the blue warning pops up, simply click **"More info"**, and then click **"Run anyway"**. 
 
 ---
 
