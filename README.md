@@ -54,3 +54,11 @@
 <br><br>
 <b>© ranveer sanghvi (ranu)</b>
 </div>
+
+<br><br>
+
+<div align="center">
+<p style="font-size: 11px; opacity: 0.5;">
+<i><b>Search Tags:</b> cute desktop pet, kawaii virtual companion, aesthetic screen pet for mac and windows, anime desktop mascot, productivity companion app, virtual pet for pc, adorable tamagotchi for desktop, cozy workstation pet, study buddy app, screen mate.</i>
+</p>
+</div>
