@@ -15,7 +15,7 @@
   <h2>💌 See Her in Action! 💌</h2>
   <p>Have cozy chats with Cariberry right on your desktop! She is always there to listen and keep you motivated! 🌟</p>
   <br>
-  <video src="https://raw.githubusercontent.com/itz-ranu/Cariberry_desktop_pet/main/demo.mp4" width="80%" controls="controls"></video>
+  <video src="demo.mp4" width="80%" controls="controls" autoplay loop muted playsinline></video>
 </div>
 
 <br>
@@ -26,11 +26,11 @@
 
 <div align="center">
   <br>
-  <a href="https://github.com/itz-ranu/Cariberry_desktop_pet/raw/main/macos/Cariberry.dmg">
+  <a href="https://github.com/itz-ranu/Cariberry/raw/main/macos/Cariberry.dmg">
     <img src="https://img.shields.io/badge/Download_for_Mac-FFB6C1?style=for-the-badge&logo=apple&logoColor=white" alt="Download for Mac" />
   </a>
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="https://github.com/itz-ranu/Cariberry_desktop_pet/raw/main/windows/CariberrySetup.exe">
+  <a href="https://github.com/itz-ranu/Cariberry/raw/main/windows/CariberrySetup.exe">
     <img src="https://img.shields.io/badge/Download_for_Windows-87CEFA?style=for-the-badge&logo=windows&logoColor=white" alt="Download for Windows" />
   </a>
   <br><br>
@@ -73,3 +73,4 @@
 <i><b>Search Tags:</b> cute desktop pet, kawaii virtual companion, aesthetic screen pet for mac and windows, anime desktop mascot, productivity companion app, virtual pet for pc, adorable tamagotchi for desktop, cozy workstation pet, study buddy app, screen mate.</i>
 </p>
 </div>
+
