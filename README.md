@@ -11,12 +11,11 @@
 
 <br>
 
-<div align="center">
-  <h2>💌 See Her in Action! 💌</h2>
-  <p>Have cozy chats with Cariberry right on your desktop! She is always there to listen and keep you motivated! 🌟</p>
-  <br>
-  <video src="demo.mp4" width="80%" controls="controls" autoplay loop muted playsinline></video>
-</div>
+<h2 align="center">💌 See Her in Action! 💌</h2>
+<p align="center">Have cozy chats with Cariberry right on your desktop! She is always there to listen and keep you motivated! 🌟</p>
+
+https://github.com/itz-ranu/Cariberry_desktop_pet/blob/main/demo.mp4
+
 
 <br>
 
