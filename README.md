@@ -12,7 +12,11 @@
 <br>
 
 <div align="center">
-  <h2>💌 See Her in Action! 💌</h2>
+  <p align="center">
+  <video src="https://cdn.jsdelivr.net/gh/itz-ranu/Cariberry_desktop_pet@main/demo.mp4" width="600" controls muted autoplay loop>
+    Your browser does not support the video tag.
+  </video>
+</p>
   <p>Have cozy chats with Cariberry right on your desktop! She is always there to listen and keep you motivated! 🌟</p>
   <br>
   <video src="https://cdn.jsdelivr.net/gh/itz-ranu/Cariberry_desktop_pet@main/demo.mp4" width="80%" controls="controls" autoplay loop muted playsinline></video>
