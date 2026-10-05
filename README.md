@@ -26,11 +26,11 @@
 
 <div align="center">
   <br>
-  <a href="https://github.com/itz-ranu/Cariberry/raw/main/macos/Cariberry.dmg">
+  <a href="https://github.com/itz-ranu/Cariberry_desktop_pet/raw/main/macos/Cariberry.dmg">
     <img src="https://img.shields.io/badge/Download_for_Mac-FFB6C1?style=for-the-badge&logo=apple&logoColor=white" alt="Download for Mac" />
   </a>
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="https://github.com/itz-ranu/Cariberry/raw/main/windows/CariberrySetup.exe">
+  <a href="https://github.com/itz-ranu/Cariberry_desktop_pet/raw/main/windows/CariberrySetup.exe">
     <img src="https://img.shields.io/badge/Download_for_Windows-87CEFA?style=for-the-badge&logo=windows&logoColor=white" alt="Download for Windows" />
   </a>
   <br><br>
