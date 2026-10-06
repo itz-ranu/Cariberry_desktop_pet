@@ -3,7 +3,6 @@
 
 
 
-
 <h1 align="center">✨ 🎀 Cariberry Desktop Pet 🎀 ✨</h1>
 
 <p align="center">
@@ -17,7 +16,7 @@
 
 <br>
 
-https://github.com/user-attachments/assets/5edd473e-9abf-4748-bdc5-474f95816446
+https://github.com/user-attachments/assets/a3f8ce9c-6535-4eab-beeb-4b617c6cda03
 
   <p>Have cozy chats with Cariberry right on your desktop! She is always there to listen and keep you motivated! 🌟</p>
   <br>
