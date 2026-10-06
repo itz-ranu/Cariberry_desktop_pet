@@ -1,6 +1,6 @@
 
 
-https://github.com/user-attachments/assets/5edd473e-9abf-4748-bdc5-474f95816446
+
 
 
 
@@ -17,6 +17,7 @@ https://github.com/user-attachments/assets/5edd473e-9abf-4748-bdc5-474f95816446
 
 <br>
 
+https://github.com/user-attachments/assets/5edd473e-9abf-4748-bdc5-474f95816446
 
   <p>Have cozy chats with Cariberry right on your desktop! She is always there to listen and keep you motivated! 🌟</p>
   <br>
