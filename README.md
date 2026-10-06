@@ -104,8 +104,6 @@ https://github.com/user-attachments/assets/626528d1-fec8-40a2-a9e1-648a0bac9e97
 
 <br>
 
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=ffb6c1&height=120&section=footer" width="100%" />
   
   <p><i>Thank you so much for downloading Cariberry! I hope she makes your desktop the cutest place ever! 💕</i></p>
   <b>✨ Created with love by ranveer sanghvi (ranu) ✨</b>
@@ -115,3 +113,7 @@ https://github.com/user-attachments/assets/626528d1-fec8-40a2-a9e1-648a0bac9e97
   <i><b>Search Tags:</b> cute desktop pet, kawaii virtual companion, aesthetic screen pet for mac and windows, anime desktop mascot, productivity companion app, virtual pet for pc, adorable tamagotchi for desktop, cozy workstation pet, study buddy app, screen mate.</i>
   </p>
 </div>
+
+
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=ffb6c1&height=120&section=footer" width="100%" />
