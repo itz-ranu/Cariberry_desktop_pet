@@ -1,3 +1,9 @@
+
+
+https://github.com/user-attachments/assets/5edd473e-9abf-4748-bdc5-474f95816446
+
+
+
 <h1 align="center">✨ 🎀 Cariberry Desktop Pet 🎀 ✨</h1>
 
 <p align="center">
@@ -11,7 +17,7 @@
 
 <br>
 
- <video src="demo.mp4" width="600" controls muted autoplay loop playsinline></video>
+
   <p>Have cozy chats with Cariberry right on your desktop! She is always there to listen and keep you motivated! 🌟</p>
   <br>
 </div>
