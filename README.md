@@ -1,79 +1,124 @@
-
-
-
-
-
-<h1 align="center">✨ 🎀 Cariberry Desktop Pet 🎀 ✨</h1>
-
-<p align="center">
-  <i>Your super cute, aesthetic, and smart virtual companion for your computer!</i> <br>
-  (≧◡≦) ♡
-</p>
-
 <div align="center">
-  <h3>✨ Created with love by: <b>ranveer sanghvi (ranu)</b> ✨</h3>
-</div>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=ffb6c1&height=200&section=header&text=Cariberry%20Desktop%20Pet&fontSize=50&fontAlignY=38&desc=Your%20cute%20virtual%20companion!&descAlignY=55&descAlign=50&fontColor=ffffff" width="100%"/>
+
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=FF69B4&center=true&vCenter=true&width=500&lines=Your+cozy+desktop+companion+🎀;She+listens+and+motivates+you+✨;Perfect+for+your+workstation+💻" alt="Typing SVG" />
 
 <br>
 
-https://github.com/user-attachments/assets/a3f8ce9c-6535-4eab-beeb-4b617c6cda03
+<video src="https://cdn.jsdelivr.net/gh/itz-ranu/Cariberry_desktop_pet@main/demo.mp4" width="75%" controls autoplay loop muted playsinline style="border-radius: 12px; box-shadow: 0px 4px 15px rgba(0,0,0,0.1);"></video>
 
-  <p>Have cozy chats with Cariberry right on your desktop! She is always there to listen and keep you motivated! 🌟</p>
-  <br>
+<br><br>
+<p><i>Cariberry lives right on your desktop, ready to chat and keep you company! 🌟</i></p>
+<br>
+
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Revolving%20Hearts.png" alt="Revolving Hearts" width="45" />
+
 </div>
+
+---
+
+<div align="center">
+  <h2>💖 Why You'll Love Cariberry</h2>
+</div>
+
+<table align="center" style="border-collapse: collapse; text-align: center; border: none;">
+  <tr style="border: none;">
+    <td width="33%" style="border: none; padding: 15px;">
+      <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Sparkles.png" alt="Sparkles" width="45" />
+      <h3 style="margin-top: 10px;">Super Aesthetic</h3>
+      <p>Adds a cozy, kawaii vibe to your workstation. The perfect companion for deep focus or relaxing breaks!</p>
+    </td>
+    <td width="33%" style="border: none; padding: 15px;">
+      <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Balloon.png" alt="Balloon" width="45" />
+      <h3 style="margin-top: 10px;">Zero Setup</h3>
+      <p>It just works! No complicated installations or dependencies. Download, click, and meet Cariberry.</p>
+    </td>
+    <td width="33%" style="border: none; padding: 15px;">
+      <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Locked.png" alt="Locked" width="45" />
+      <h3 style="margin-top: 10px;">100% Private</h3>
+      <p>Your data stays entirely on your PC. Connects to the internet <b>only</b> if you link an AI brain (Claude, ChatGPT, Gemini, Ollama).</p>
+    </td>
+  </tr>
+</table>
+
 <br>
 
 ---
 
-<h2 align="center">🎀 How to Download & Install 🎀</h2>
+<div align="center">
+  <h2>☁️ Quick Download ☁️</h2>
+  <p>Ready to meet your new best friend? Choose your operating system below!</p>
+  <br>
+  
+  <table style="border: none;">
+    <tr style="border: none;">
+      <td align="center" width="50%" style="border: none;">
+        <h3>🍎 For Mac</h3>
+        <a href="https://github.com/itz-ranu/Cariberry_desktop_pet/raw/main/macos/Cariberry.dmg">
+          <img src="https://img.shields.io/badge/Download_for_Mac-FFB6C1?style=for-the-badge&logo=apple&logoColor=white" alt="Mac Download" height="50">
+        </a>
+      </td>
+      <td align="center" width="50%" style="border: none;">
+        <h3>🪟 For Windows</h3>
+        <a href="https://github.com/itz-ranu/Cariberry_desktop_pet/raw/main/windows/CariberrySetup.exe">
+          <img src="https://img.shields.io/badge/Download_for_Windows-87CEFA?style=for-the-badge&logo=windows&logoColor=white" alt="Windows Download" height="50">
+        </a>
+      </td>
+    </tr>
+  </table>
+  <br>
+  <i>💡 Tip: Please use the big buttons above instead of clicking "Download ZIP" on GitHub!</i>
+</div>
+
+<br>
+
+---
 
 <div align="center">
-  <br>
-  <a href="https://github.com/itz-ranu/Cariberry_desktop_pet/raw/main/macos/Cariberry.dmg">
-    <img src="https://img.shields.io/badge/Download_for_Mac-FFB6C1?style=for-the-badge&logo=apple&logoColor=white" alt="Download for Mac" />
-  </a>
-  &nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="https://github.com/itz-ranu/Cariberry_desktop_pet/raw/main/windows/CariberrySetup.exe">
-    <img src="https://img.shields.io/badge/Download_for_Windows-87CEFA?style=for-the-badge&logo=windows&logoColor=white" alt="Download for Windows" />
-  </a>
+  <h2>🛠️ Easy Installation Guide</h2>
+</div>
+
+<details open>
+  <summary><b>🍎 Setting up on macOS</b></summary>
+  <blockquote>
+    <ol>
+      <li><b>Click the pink Mac button above</b> to download <code>Cariberry.dmg</code>.</li>
+      <li>Double-click the downloaded file to open it.</li>
+      <li>Drag the <b>Cariberry</b> app into your <b>Applications</b> folder.</li>
+      <li>Open it from your Applications and enjoy! ✨</li>
+    </ol>
+    <hr>
+    <b>💡 Troubleshooting ("App is damaged"):</b><br>
+    Since Cariberry is a new app, macOS might say it's "damaged". Don't panic, it's completely safe!
+    <br><b>To fix:</b> Open the <b>Terminal</b> app, paste exactly <code>xattr -cr /Applications/Cariberry.app</code> and hit <b>Enter</b>. Then open Cariberry normally!
+  </blockquote>
+</details>
+
+<details open>
+  <summary><b>🪟 Setting up on Windows</b></summary>
+  <blockquote>
+    <ol>
+      <li><b>Click the blue Windows button above</b> to download <code>CariberrySetup.exe</code>.</li>
+      <li>Double-click the downloaded file to run the installer.</li>
+      <li>It installs just for you, opens Cariberry right away, and will start with Windows automatically! ✨</li>
+    </ol>
+    <hr>
+    <b>💡 Troubleshooting ("Windows protected your PC"):</b><br>
+    Windows SmartScreen might block new apps. When the blue warning pops up, simply click <b>"More info"</b>, and then click <b>"Run anyway"</b>.
+  </blockquote>
+</details>
+
+<br>
+
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=ffb6c1&height=120&section=footer" width="100%" />
+  
+  <p><i>Thank you so much for downloading Cariberry! I hope she makes your desktop the cutest place ever! 💕</i></p>
+  <b>✨ Created with love by ranveer sanghvi (ranu) ✨</b>
   <br><br>
+  
+  <p style="font-size: 11px; opacity: 0.5;">
+  <i><b>Search Tags:</b> cute desktop pet, kawaii virtual companion, aesthetic screen pet for mac and windows, anime desktop mascot, productivity companion app, virtual pet for pc, adorable tamagotchi for desktop, cozy workstation pet, study buddy app, screen mate.</i>
+  </p>
 </div>
-
-### 🍎 For macOS Users
-1. **Click the pink Mac button above** to download `Cariberry.dmg`. *(Do not click "Download ZIP" on GitHub!)*
-2. Double-click the downloaded file to open it.
-3. Drag the **Cariberry** app into your **Applications** folder.
-4. Open it from your Applications! ✨
-> 🛠️ **Mac Troubleshooting ("App is damaged"):** Since Cariberry is a brand new app, your Mac might say it's "damaged". Don't panic! It's completely safe. To fix this:
-> Open the **Terminal** app on your Mac, paste exactly `xattr -cr /Applications/Cariberry.app` and hit Enter. Now open Cariberry normally!
-
-### 🪟 For Windows Users
-1. **Click the blue Windows button above** to download `CariberrySetup.exe`. *(Do not click "Download ZIP" on GitHub!)*
-2. Double-click the downloaded file to run the installer.
-3. It installs just for you, opens Cariberry right away, and will start with Windows automatically! ✨
-> 🛠️ **Windows Troubleshooting ("Windows protected your PC"):** Windows SmartScreen sometimes blocks new apps. When the blue warning pops up, simply click **"More info"**, and then click **"Run anyway"**. 
-
----
-
-<h2 align="center">💖 Why You'll Love Cariberry!</h2>
-
-* ✨ **Super Aesthetic & Cute!** Perfect for making your workstation aesthetic and cozy.
-* 🎈 **No Setup Needed!** Works right out of the box without any complicated installations.
-* 🔒 **100% Private!** Your data stays entirely on your PC. Only if you connect a chat brain (ranveer sanghvi (ranu), ChatGPT, Gemini or Ollama) will it use the internet for chatting!
-
-<br>
-
-<div align="center">
-<i>Thank you so much for downloading Cariberry! I hope she makes your desktop the cutest place ever! 💕</i>
-<br><br>
-<b>© ranveer sanghvi (ranu)</b>
-</div>
-
-<br><br>
-
-<div align="center">
-<p style="font-size: 11px; opacity: 0.5;">
-<i><b>Search Tags:</b> cute desktop pet, kawaii virtual companion, aesthetic screen pet for mac and windows, anime desktop mascot, productivity companion app, virtual pet for pc, adorable tamagotchi for desktop, cozy workstation pet, study buddy app, screen mate.</i>
-</p>
-</div>
-
