@@ -1,3 +1,6 @@
+
+
+
 <div align="center">
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=ffb6c1&height=200&section=header&text=Cariberry%20Desktop%20Pet&fontSize=50&fontAlignY=38&desc=Your%20cute%20virtual%20companion!&descAlignY=55&descAlign=50&fontColor=ffffff" width="100%"/>
@@ -29,11 +32,13 @@
 <p><i>Cariberry lives right on your desktop, ready to chat and keep you company! 🌟</i></p>
 <br>
 
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Revolving%20Hearts.png" alt="Revolving Hearts" width="45" />
+https://github.com/user-attachments/assets/626528d1-fec8-40a2-a9e1-648a0bac9e97
 
 </div>
 
 ---
+
+
 
 <div align="center">
   <h2>💖 Why You'll Love Cariberry</h2>
