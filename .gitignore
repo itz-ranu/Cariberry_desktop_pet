@@ -7,3 +7,4 @@ windows-app/
 *.py
 watermarks-remover-main/
 demo.mp4
+.DS_Store
