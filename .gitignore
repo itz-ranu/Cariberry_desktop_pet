@@ -1,0 +1,8 @@
+Sources/
+cranberry/
+windows-app/
+*.swift
+*.sh
+*.bat
+*.py
+watermarks-remover-main/

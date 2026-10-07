@@ -59,7 +59,7 @@ https://github.com/user-attachments/assets/626528d1-fec8-40a2-a9e1-648a0bac9e97
     <td width="33%" style="border: none; padding: 15px; background: transparent;">
       <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Locked.png" alt="Locked" width="45" />
       <h3 style="margin-top: 10px;">100% Private</h3>
-      <p>Your data stays entirely on your PC. Connects to the internet <b>only</b> if you link an AI brain (Claude, ChatGPT, Gemini, Ollama).</p>
+      <p>Your data stays entirely on your PC. Connects to the internet <b>only</b> if you link an AI brain (ChatGPT, Gemini, Ollama).</p>
     </td>
   </tr>
 </table>
