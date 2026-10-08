@@ -58,8 +58,8 @@ https://github.com/user-attachments/assets/626528d1-fec8-40a2-a9e1-648a0bac9e97
     </td>
     <td width="33%" style="border: none; padding: 15px; background: transparent;">
       <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Locked.png" alt="Locked" width="45" />
-      <h3 style="margin-top: 10px;">100% Private</h3>
-      <p>Your data stays entirely on your PC. Connects to the internet <b>only</b> if you link an AI brain (ChatGPT, Gemini, Ollama).</p>
+      <h3 style="margin-top: 10px;">Private by default</h3>
+      <p>No accounts, ads, analytics or trackers, and what she learns about you stays on your computer. She goes online <b>only</b> if you connect an online chat service (ChatGPT or Gemini) with your own key. Read the <a href="PRIVACY.md">privacy policy</a>.</p>
     </td>
   </tr>
 </table>
@@ -83,8 +83,8 @@ https://github.com/user-attachments/assets/626528d1-fec8-40a2-a9e1-648a0bac9e97
     </ol>
     <hr>
     <b>💡 Troubleshooting ("App is damaged"):</b><br>
-    Since Cariberry is a new app, macOS might say it's "damaged". Don't panic, it's completely safe!
-    <br><b>To fix:</b> Open the <b>Terminal</b> app, paste exactly <code>xattr -cr /Applications/Cariberry.app</code> and hit <b>Enter</b>. Then open Cariberry normally!
+    Cariberry isn't signed with an Apple Developer ID or notarized by Apple yet, so macOS may say it can't verify the app.
+    <br><b>To open it:</b> in Applications, <b>right-click Cariberry, choose Open, then Open again</b> (System Settings &gt; Privacy &amp; Security &gt; "Open Anyway" also works). Only do this for a copy you downloaded from this project, and compare its SHA-256 with the one on the download page of the project website first. You can also read the source and build it yourself.
   </blockquote>
 </details>
 
@@ -94,11 +94,11 @@ https://github.com/user-attachments/assets/626528d1-fec8-40a2-a9e1-648a0bac9e97
     <ol>
       <li><b>Click the blue Windows button above</b> to download <code>CariberrySetup.exe</code>.</li>
       <li>Double-click the downloaded file to run the installer.</li>
-      <li>It installs just for you, opens Cariberry right away, and will start with Windows automatically! ✨</li>
+      <li>It installs just for you, opens Cariberry right away, and starts when you ask her to (turn on <i>Start with Windows</i> in Settings if you want her there every day). ✨</li>
     </ol>
     <hr>
     <b>💡 Troubleshooting ("Windows protected your PC"):</b><br>
-    Windows SmartScreen might block new apps. When the blue warning pops up, simply click <b>"More info"</b>, and then click <b>"Run anyway"</b>.
+    The installer isn't code-signed yet, so Windows SmartScreen may warn you. If you downloaded it from this project and its SHA-256 matches the one on the download page of the project website, click <b>"More info"</b>, then <b>"Run anyway"</b>.
   </blockquote>
 </details>
 
@@ -110,10 +110,15 @@ https://github.com/user-attachments/assets/626528d1-fec8-40a2-a9e1-648a0bac9e97
   <br><br>
   
   <p style="font-size: 11px; opacity: 0.5;">
-  <i><b>Search Tags:</b> cute desktop pet, kawaii virtual companion, aesthetic screen pet for mac and windows, anime desktop mascot, productivity companion app, virtual pet for pc, adorable tamagotchi for desktop, cozy workstation pet, study buddy app, screen mate.</i>
+  <i><b>Search Tags:</b> cute desktop pet, kawaii virtual companion, aesthetic screen pet for mac and windows, anime desktop mascot, productivity companion app, virtual pet for pc, virtual pet game for desktop, cozy workstation pet, study buddy app, screen mate.</i>
   </p>
 </div>
 
 
 <div align="center">
+  <p><sub>
+    For ages 13 and up &middot; <a href="PRIVACY.md">Privacy</a> &middot; <a href="TERMS.md">Terms</a> &middot; <a href="LICENSE">MIT License</a> &middot; <a href="THIRD_PARTY_NOTICES.md">Third-party notices</a> &middot; <a href="SECURITY.md">Security</a><br>
+    Cariberry is an independent project. It is not affiliated with, endorsed by or sponsored by Apple, Microsoft, Google, OpenAI, Spotify or any other company named here; their names and trademarks belong to their owners.<br>
+    Emoji art: <a href="https://github.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis">Animated Fluent Emojis</a> (MIT), based on Microsoft Fluent Emoji.
+  </sub></p>
   <img src="https://capsule-render.vercel.app/api?type=waving&color=ffb6c1&height=120&section=footer" width="100%" />

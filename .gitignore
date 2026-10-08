@@ -1,10 +1,17 @@
-Sources/
-cranberry/
-windows-app/
-*.swift
-*.sh
-*.bat
-*.py
+# Only build output, local environments and machine junk are ignored. The source (Sources/, cranberry/,
+# windows-app/, the scripts) must be tracked so the MIT LICENSE and the third-party notices stay accurate.
+.DS_Store
+.build/
+.swiftpm/
+dist/
+node_modules/
+.venv/
+__pycache__/
+*.pyc
+/Cariberry.app/
+/Cariberry.dmg
 watermarks-remover-main/
 demo.mp4
-.DS_Store
+
+# voice recordings of whoever trained the wake word are personal data: keep them local
+cranberry/data/wake/
