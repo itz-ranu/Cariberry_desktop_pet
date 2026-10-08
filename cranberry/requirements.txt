@@ -1,0 +1,12 @@
+# Core ML (the from-scratch wake-word CNN and brain models)
+torch
+numpy
+scipy
+
+# Audio capture + feature extraction for the wake-word detector
+sounddevice
+librosa
+
+# macOS integration: cursor control (Quartz), Dock lookup (ApplicationServices),
+# app launch/termination (AppKit) -- the umbrella package pulls in all of these.
+pyobjc

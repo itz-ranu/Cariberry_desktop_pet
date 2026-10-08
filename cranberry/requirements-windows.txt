@@ -1,0 +1,7 @@
+# The voice assistant's dependencies on Windows: the same as the Mac list, minus pyobjc
+# (macOS-only: cursor control and Dock lookups need a Windows equivalent).
+torch
+numpy
+scipy
+sounddevice
+librosa

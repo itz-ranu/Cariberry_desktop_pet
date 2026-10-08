@@ -2,6 +2,6 @@
 
 1. Open Cariberry.dmg.
 2. Drag Cariberry onto the Applications folder.
-3. Open Cariberry from Applications. She starts with your Mac from then on (turn it off in Settings > Launch at login).
+3. Open Cariberry from Applications. She only starts with your Mac if you turn on Settings > Launch at login.
 
 First time on a Mac that is not the one it was built on: if macOS says it cannot verify the app, right-click Cariberry, choose Open, then Open again.

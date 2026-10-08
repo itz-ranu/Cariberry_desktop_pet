@@ -1,0 +1,70 @@
+/* Her scrapbook: 380 wide, as StatsView.swift. The title bar is hidden; the page runs underneath the window buttons. */
+html, body { width: 100%; height: 100%; overflow: hidden; }
+body { background: var(--bg); }
+#app { position: relative; width: 100%; height: 100%; }
+.stats { position: relative; width: 100%; height: 100%; overflow-y: auto; overflow-x: hidden; scrollbar-width: thin; scrollbar-color: color-mix(in srgb, var(--ink) 25%, transparent) transparent; }
+.stats-page { position: fixed; inset: 0; background: var(--page); overflow: hidden; }
+.stats-page .blob.a { width: 280px; height: 280px; right: -90px; top: -150px; filter: blur(64px); background: color-mix(in srgb, var(--second) 32%, transparent); }
+.stats-page .blob.b { width: 300px; height: 300px; left: -110px; bottom: -120px; filter: blur(70px); background: color-mix(in srgb, var(--accent) 28%, transparent); }
+.dragbar { position: fixed; left: 0; right: 138px; top: 0; height: 36px; -webkit-app-region: drag; z-index: 5; }
+.stack { position: relative; max-width: 420px; margin: 0 auto; padding: 22px 16px 26px; display: flex; flex-direction: column; gap: 14px; }
+.stack > * { flex: none; }
+
+.avatar84 { position: relative; width: 84px; height: 84px; border-radius: 50%; flex: none;
+  background: linear-gradient(135deg, color-mix(in srgb, var(--second) 70%, transparent), color-mix(in srgb, var(--accent) 60%, transparent)); box-shadow: 0 4px 10px color-mix(in srgb, var(--accent) 40%, transparent); }
+.avatar84::after { content: ''; position: absolute; inset: 0; border-radius: 50%; box-shadow: inset 0 0 0 3px var(--glass-90); pointer-events: none; }
+
+.levelcard { border-radius: 22px; padding: 15px; border: 1.5px solid var(--glass-80);
+  background: linear-gradient(135deg, color-mix(in srgb, var(--second) 35%, transparent), color-mix(in srgb, var(--accent) 30%, transparent)); }
+
+.stepbtn { width: 30px; height: 30px; border-radius: 50%; display: grid; place-items: center; background: color-mix(in srgb, var(--accent) 25%, transparent); flex: none; }
+.stepbtn:disabled { opacity: .3; }
+.cal { display: grid; grid-template-columns: repeat(7, 1fr); gap: 6px; }
+.cal .dow { text-align: center; font-size: 10px; font-weight: 800; color: var(--ink-soft); }
+.day { position: relative; height: 34px; border-radius: 9px; font-size: 11px; font-weight: 700; display: grid; place-items: center; background: var(--track); color: color-mix(in srgb, var(--ink) 50%, transparent); transition: transform .2s var(--spring); }
+.day:active { transform: scale(.94); }
+.day.has { color: color-mix(in srgb, var(--ink) 90%, transparent); }
+.day.hit { background: var(--hot); color: #fff; }
+.day.sel { box-shadow: inset 0 0 0 2px var(--ink); }
+.day.today { font-weight: 900; }
+.day.future { opacity: 0; pointer-events: none; }
+.day .dot { position: absolute; top: -2px; right: -2px; width: 7px; height: 7px; border-radius: 50%; background: var(--second); }
+.day .m { position: absolute; right: 2px; bottom: 0; font-size: 8px; line-height: 1.2; }
+.divider { height: 1px; background: color-mix(in srgb, var(--ink) 12%, transparent); }
+
+.tile2 { display: flex; align-items: center; gap: 10px; padding: 9px 10px; border-radius: 16px; background: var(--glass-70); min-width: 0; }
+.tile2 .ic { width: 36px; height: 36px; border-radius: 12px; display: grid; place-items: center; font-size: 20px; flex: none; }
+.tile2 .v { font-size: 16px; font-weight: 900; }
+.tile2 .l { font-size: 10px; font-weight: 700; color: var(--ink-soft); }
+.badge { min-height: 66px; padding: 4px 2px; border-radius: 14px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; text-align: center; background: var(--track); }
+.badge.got { background: color-mix(in srgb, var(--accent) 22%, transparent); }
+.badge .e { font-size: 24px; line-height: 1.15; } .badge:not(.got) .e { opacity: .5; }
+.badge .t { font-size: 9px; font-weight: 800; line-height: 1.15; }
+.splitbar { display: flex; gap: 3px; height: 10px; }
+.splitbar i { border-radius: 99px; display: block; }
+.catpill { display: inline-flex; align-items: center; gap: 5px; padding: 6px 10px; border-radius: 99px; background: var(--glass-70); font-size: 11px; font-weight: 700; }
+
+/* this week, the day split, discoveries */
+.kdot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; flex: none; }
+.dur { min-width: 40px; text-align: right; }
+.weekchart { position: relative; display: flex; align-items: flex-end; gap: 8px; }
+.weekchart .goalline { position: absolute; left: 0; right: 0; height: 0; border-top: 1px dashed color-mix(in srgb, var(--ink-soft) 40%, transparent); pointer-events: none; }
+.weekchart .goalline b { position: absolute; left: 0; top: -12px; font-size: 8.5px; font-weight: 800; color: var(--ink-soft); }
+.wbar { flex: 1; height: 100%; display: flex; flex-direction: column; justify-content: flex-end; align-items: stretch; gap: 3px; min-width: 0; }
+.wbar .wv { font-size: 8.5px; font-weight: 800; text-align: center; opacity: .65; white-space: nowrap; overflow: hidden; }
+.wbar.sel .wv { opacity: 1; }
+.wbar i { display: block; border-radius: 7px; background: var(--track); transition: height .4s var(--spring); }
+.wbar i.has { background: linear-gradient(180deg, color-mix(in srgb, var(--accent) 55%, transparent), var(--accent)); }
+.wbar i.hit { background: var(--hot); }
+.wbar.sel i { box-shadow: 0 0 0 2px var(--ink); }
+.weekdays { display: flex; gap: 8px; } .weekdays span { flex: 1; text-align: center; font-size: 9.5px; font-weight: 700; color: var(--ink-soft); }
+.weekdays span.now { color: var(--ink); font-weight: 900; }
+.mini { display: flex; flex-direction: column; align-items: center; gap: 1px; padding: 8px 4px; border-radius: 14px; background: var(--glass-70); }
+.mini b { font-size: 15px; font-weight: 900; } .mini span { font-size: 10px; font-weight: 600; color: var(--ink-soft); }
+.insic { width: 34px; height: 34px; border-radius: 11px; display: grid; place-items: center; font-size: 18px; flex: none; background: color-mix(in srgb, var(--accent) 25%, transparent); }
+.insl { font-size: 10px; font-weight: 800; color: var(--ink-soft); text-transform: uppercase; letter-spacing: .4px; }
+.hourchart { display: flex; align-items: flex-end; gap: 2.5px; height: 40px; }
+.hourchart i { flex: 1; border-radius: 2.5px; background: color-mix(in srgb, var(--accent) 18%, transparent); }
+.hourchart i.has { background: color-mix(in srgb, var(--accent) 55%, transparent); } .hourchart i.peak { background: var(--hot); }
+.hl { font-size: 8.5px; font-weight: 700; color: var(--ink-soft); }
+.g1 { gap: 1px; }

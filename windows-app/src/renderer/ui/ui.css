@@ -1,0 +1,152 @@
+/* Cariberry's look, shared by the control panel, the stats window and the floating cards.
+   Every measurement is the Mac app's (PanelView.swift and friends); every colour is a theme variable
+   set by theme.js. The typeface is Nunito, standing in for Apple's rounded system font. */
+
+@font-face {
+  font-family: 'Nunito'; font-weight: 200 1000; font-style: normal; font-display: block;
+  src: url('../../../assets/fonts/Nunito-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Nunito'; font-weight: 200 1000; font-style: normal; font-display: block;
+  src: url('../../../assets/fonts/Nunito-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Patrick Hand'; font-weight: 400; font-style: normal; font-display: block;
+  src: url('../../../assets/fonts/PatrickHand.woff2') format('woff2');
+}
+
+:root {
+  --font: 'Nunito', ui-rounded, 'Segoe UI Variable Display', 'Segoe UI', system-ui, sans-serif;
+  --emoji: 'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif;
+  --hand: 'Patrick Hand', 'Segoe Print', 'Comic Sans MS', cursive;
+  --spring: cubic-bezier(.34, 1.56, .64, 1);
+}
+
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+html, body { margin: 0; padding: 0; background: transparent; color: var(--ink); font-family: var(--font); font-size: 13px; line-height: 1.2;
+  -webkit-font-smoothing: antialiased; user-select: none; -webkit-user-select: none; cursor: default; overflow: hidden; }
+button { font: inherit; color: inherit; background: none; border: 0; padding: 0; margin: 0; cursor: pointer; text-align: inherit; }
+button:disabled { cursor: default; }
+input, select, textarea { font: inherit; color: inherit; }
+::selection { background: color-mix(in srgb, var(--accent) 45%, transparent); }
+:focus { outline: none; }
+:focus-visible { outline: 2.5px solid color-mix(in srgb, var(--accent) 80%, white); outline-offset: 2px; border-radius: 10px; }
+.emoji { font-family: var(--font), var(--emoji); }
+
+/* ---------------------------------------------------------------- the page behind everything */
+
+.page { position: relative; overflow: hidden; background: var(--page); }
+.page .blob { position: absolute; border-radius: 50%; pointer-events: none; }
+.scroll { overflow-y: auto; overflow-x: hidden; scrollbar-width: none; }
+.scroll::-webkit-scrollbar { display: none; }
+
+/* ---------------------------------------------------------------- type */
+
+.label { font-size: 11px; font-weight: 800; color: var(--ink-soft); text-transform: uppercase; letter-spacing: .5px; }
+.soft { color: var(--ink-soft); }
+.b600 { font-weight: 700; } .b700 { font-weight: 800; } .b800 { font-weight: 900; }
+.t10 { font-size: 10px; } .t105 { font-size: 10.5px; } .t11 { font-size: 11px; } .t115 { font-size: 11.5px; } .t12 { font-size: 12px; }
+.t125 { font-size: 12.5px; } .t13 { font-size: 13px; } .t14 { font-size: 14px; } .t15 { font-size: 15px; } .t17 { font-size: 17px; }
+.note { font-size: 11.5px; font-weight: 600; color: var(--ink-soft); }
+.note.s { font-size: 11px; } .note.xs { font-size: 10.5px; }
+.mono { font-variant-numeric: tabular-nums; }
+.lh { line-height: 1.3; }
+
+/* ---------------------------------------------------------------- layout helpers */
+
+.vs { display: flex; flex-direction: column; } .hs { display: flex; align-items: center; }
+.g2 { gap: 2px; } .g3 { gap: 3px; } .g4 { gap: 4px; } .g5 { gap: 5px; } .g6 { gap: 6px; } .g7 { gap: 7px; } .g8 { gap: 8px; }
+.g9 { gap: 9px; } .g10 { gap: 10px; } .g11 { gap: 11px; } .g12 { gap: 12px; } .g14 { gap: 14px; } .g16 { gap: 16px; }
+.grow { flex: 1; min-width: 0; } .fill { width: 100%; } .center { align-items: center; justify-content: center; text-align: center; }
+.sp { flex: 1; }
+.grid { display: grid; }
+.cols2 { grid-template-columns: repeat(2, 1fr); } .cols3 { grid-template-columns: repeat(3, 1fr); } .cols4 { grid-template-columns: repeat(4, 1fr); }
+.gap6 { gap: 6px; } .gap8 { gap: 8px; } .gap10 { gap: 10px; } .gap16 { gap: 16px; }
+.ell { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.clamp2 { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+
+/* ---------------------------------------------------------------- icons */
+
+.icon { display: inline-block; flex: none; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; vertical-align: middle; }
+.icon.filled { fill: currentColor; }
+
+/* ---------------------------------------------------------------- the soft press (PressStyle) */
+
+.press { transition: transform .22s var(--spring), opacity .12s; }
+.press:active:not(:disabled) { transform: scale(.94); opacity: .88; }
+@media (prefers-reduced-motion: reduce) { .press, .press:active:not(:disabled) { transition: none; transform: none; } }
+
+/* ---------------------------------------------------------------- cards */
+
+.card { background: var(--card); border: 1.5px solid var(--glass-90); border-radius: 22px; padding: 14px; width: 100%;
+  box-shadow: 0 5px 12px color-mix(in srgb, var(--ink) 7%, transparent); }
+.card.big { border-radius: 24px; padding: 15px; }
+.pill { display: inline-flex; align-items: center; font-size: 11px; font-weight: 900; padding: 3px 9px; border-radius: 99px; color: var(--ink); white-space: nowrap; }
+.pill.s { font-size: 10.5px; padding: 3px 8px; }
+.chip { display: inline-flex; align-items: center; justify-content: center; gap: 6px; font-size: 12px; font-weight: 800; padding: 7px 12px; border-radius: 99px;
+  color: var(--ink); background: color-mix(in srgb, var(--tint, var(--accent)) 32%, transparent); white-space: nowrap; transition: background .1s, opacity .1s; }
+.chip:active:not(:disabled) { background: color-mix(in srgb, var(--tint, var(--accent)) 60%, transparent); }
+.chip:disabled { opacity: .4; }
+.chip.alert { --tint: var(--alert); } .chip.blush { --tint: var(--second); } .chip.sage { --tint: var(--sage); }
+.hotbtn { display: flex; align-items: center; justify-content: center; color: #fff; background: var(--hot); border-radius: 99px; }
+.circle-btn { width: 30px; height: 30px; border-radius: 50%; display: grid; place-items: center; flex: none; }
+.circle-btn.glass { background: var(--glass-70); color: var(--ink-soft); }
+.circle-btn.hot { background: var(--hot); color: #fff; }
+.field { width: 100%; border: 0; background: var(--track); border-radius: 14px; padding: 9px 12px; font-size: 13px; font-weight: 700; color: var(--ink); user-select: text; -webkit-user-select: text; }
+.field::placeholder { color: var(--ink-soft); font-weight: 700; }
+.field.s { border-radius: 12px; padding: 8px 12px; font-size: 12.5px; }
+.field:focus { box-shadow: 0 0 0 2px color-mix(in srgb, var(--accent) 70%, transparent); }
+
+/* a tinted tile (a pastel square with an emoji) */
+.sel { background: var(--track); border: 2px solid transparent; transition: background .15s, border-color .15s; }
+.sel.on { background: color-mix(in srgb, var(--accent) 32%, transparent); border-color: var(--accent); }
+
+/* ---------------------------------------------------------------- bars and rings */
+
+.bar { position: relative; height: var(--h, 8px); border-radius: 99px; background: var(--track); overflow: hidden; width: 100%; }
+.bar > i { position: absolute; left: 0; top: 0; bottom: 0; min-width: var(--h, 8px); border-radius: 99px; transition: width .6s cubic-bezier(.3, 1.2, .5, 1); }
+.ring { position: relative; flex: none; display: grid; place-items: center; }
+.ring svg { position: absolute; inset: 0; transform: rotate(-90deg); overflow: visible; }
+.ring .arc { transition: stroke-dashoffset .7s cubic-bezier(.3, 1.2, .5, 1); }
+@media (prefers-reduced-motion: reduce) { .bar > i, .ring .arc { transition: none; } }
+
+/* ---------------------------------------------------------------- switch (a small Toggle) */
+
+.switch { position: relative; width: 34px; height: 20px; flex: none; border-radius: 99px; background: color-mix(in srgb, var(--ink) 20%, transparent); transition: background .18s; }
+.switch::after { content: ''; position: absolute; top: 2px; left: 2px; width: 16px; height: 16px; border-radius: 50%; background: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,.28); transition: transform .2s var(--spring); }
+.switch.on { background: var(--accent); }
+.switch.on::after { transform: translateX(14px); }
+.switch.mini { width: 28px; height: 17px; } .switch.mini::after { width: 13px; height: 13px; } .switch.mini.on::after { transform: translateX(11px); }
+
+.iconbadge { width: 30px; height: 30px; flex: none; border-radius: 10px; display: grid; place-items: center; color: color-mix(in srgb, var(--ink) 75%, transparent);
+  background: color-mix(in srgb, var(--accent) 22%, transparent); }
+
+/* ---------------------------------------------------------------- selects and sliders */
+
+.select { appearance: none; -webkit-appearance: none; border: 0; border-radius: 10px; padding: 6px 26px 6px 10px; font-size: 12px; font-weight: 800; color: var(--ink);
+  background: var(--glass-70) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='14' viewBox='0 0 10 14'%3E%3Cpath d='M2 5l3-3 3 3M2 9l3 3 3-3' fill='none' stroke='%23857a90' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat right 8px center;
+  box-shadow: 0 1px 2px rgba(0,0,0,.12); cursor: pointer; }
+.select.dd { text-align: left; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.dd-pop { z-index: 50; overflow-y: auto; scrollbar-width: thin; padding: 4px; border-radius: 12px; background: #fff; color: #3a3040; box-shadow: 0 8px 22px rgba(40, 20, 60, .3), 0 0 0 1px rgba(40, 20, 60, .08); }
+.dd-pop button { display: block; width: 100%; padding: 6px 10px; border-radius: 8px; font-size: 12px; font-weight: 800; white-space: nowrap; }
+.dd-pop button:hover { background: rgba(160, 120, 220, .16); }
+.dd-pop button.on { background: rgba(160, 120, 220, .28); }
+.seg { display: flex; padding: 3px; border-radius: 10px; background: var(--track); gap: 2px; }
+.seg button { flex: 1; text-align: center; padding: 6px 8px; border-radius: 8px; font-size: 12px; font-weight: 800; color: var(--ink); transition: background .15s; }
+.seg button.on { background: var(--glass-90); box-shadow: 0 1px 3px rgba(0,0,0,.14); }
+input[type=range] { -webkit-appearance: none; appearance: none; width: 100%; height: 18px; background: transparent; cursor: pointer; margin: 0; }
+input[type=range]::-webkit-slider-runnable-track { height: 4px; border-radius: 99px; background: linear-gradient(90deg, var(--accent) var(--v, 50%), var(--track) var(--v, 50%)); }
+input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; width: 16px; height: 16px; margin-top: -6px; border-radius: 50%; background: #fff; box-shadow: 0 1px 4px rgba(0,0,0,.3); }
+
+/* ---------------------------------------------------------------- notice strip */
+
+.notice { display: flex; align-items: center; gap: 8px; padding: 8px; border-radius: 12px; background: color-mix(in srgb, var(--butter) 32%, transparent); }
+
+/* ---------------------------------------------------------------- equaliser */
+
+.eq { display: flex; align-items: flex-end; gap: 3px; height: 30px; width: 34px; }
+.eq i { width: 5px; border-radius: 99px; background: color-mix(in srgb, var(--accent) 35%, transparent); height: 4px; transition: height .14s ease-in-out; }
+.eq.playing i { background: color-mix(in srgb, var(--accent) 90%, transparent); }

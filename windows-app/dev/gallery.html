@@ -1,0 +1,18 @@
+<!doctype html><meta charset=utf-8><title>gallery</title>
+<body style="margin:0;background:#f6eefa"><canvas id=c></canvas>
+<script type=module>
+import { drawCritter } from '../src/shared/critter.js'
+import { SPECIES, coatsOf } from '../src/shared/data.js'
+const emos = new URLSearchParams(location.search).get('e')?.split(',') || ['happy']
+const scale = +(new URLSearchParams(location.search).get("s") || 1.4), cw = 200*scale, ch = 194*scale
+const cv = document.getElementById('c'); const dpr = 2
+const rows = SPECIES.length, cols = emos.length
+cv.width = cw*cols*dpr; cv.height = ch*rows*dpr; cv.style.width = cw*cols+'px'; cv.style.height = ch*rows+'px'
+const g = cv.getContext('2d'); g.scale(dpr,dpr)
+SPECIES.forEach((sp, r) => emos.forEach((e, k) => {
+  g.save(); g.translate(k*cw, r*ch)
+  drawCritter(g, sp, 0, { emotion: e, phase: 0.42, sit: new URLSearchParams(location.search).get('sit') ? 1:0 }, scale)
+  g.restore()
+}))
+window.done = true
+</script>

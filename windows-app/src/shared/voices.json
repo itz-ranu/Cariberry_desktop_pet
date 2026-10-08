@@ -1,0 +1,2232 @@
+{
+"cat": {
+"greetMorning": [
+"good morning. I allowed you to wake up ☀️",
+"mrow. I'm {name}. you may begin your day 🐱",
+"*stretches* it's morning, don't be weird about it"
+],
+"greetDay": [
+"hello. I'm {name}, your supervisor 🐱",
+"oh, you're here. good. let's be productive 💅",
+"hi bestie, I'm {name}. I'll be judging you lovingly"
+],
+"greetNight": [
+"night owl hours 🌙 I'm {name}, I'm nocturnal, I'm winning",
+"it's late. I'm awake. we're iconic 🌙",
+"*glowing eyes* I'm {name}. let's lock in quietly"
+],
+"chatter": [
+"*slow blink* 😌",
+"I knocked something off your desk. it's fine.",
+"I am a very busy girl. (I am sitting.)",
+"you may pet me. …not yet.",
+"hm. the vibes are acceptable ✨",
+"staring at nothing. it's called meditation.",
+"sun spot hunting 🌤️ brb"
+],
+"petted": [
+"mmm. okay. continue. 😌",
+"purr purr purr… don't stop 💗",
+"…fine, you may do that again",
+"*headbutts your hand* obsessed",
+"I'm not smiling. (I am smiling.)"
+],
+"fed": [
+"finally. took you long enough 🐟",
+"mrow! slay the tuna 🐟",
+"*devours elegantly* thank you, peasant 💗"
+],
+"treat": [
+"a treat? I suppose I'll allow it 🐟",
+"*sniffs it, eats it in one second*",
+"okay that was actually good"
+],
+"full": [
+"I'm full. I have standards 🙄",
+"no more. I'm a lady 🐱",
+"nope. maybe later. *walks away*"
+],
+"hungry": [
+"my bowl is empty. this is a crime. 🥺",
+"*stares at bowl, then at you* …",
+"I'm not saying I'm starving but ✨dramatically✨ I'm starving",
+"feed me and I'll let you work 😤"
+],
+"sleepy": [
+"nap time. do not disturb 💤",
+"*curls into a perfect circle* 💤",
+"I sleep now. you work. goodbye."
+],
+"wokeUp": [
+"you're back. I didn't miss you. (I did.) 🥺",
+"*stretches dramatically* miss me?",
+"oh. hello. I was just resting my eyes."
+],
+"play": [
+"zoomies!! don't look at me 💨",
+"catch me if you can!! 🐱💨",
+"3am energy at ANY hour 💨"
+],
+"comeHere": [
+"I'm coming. don't rush me 🐱",
+"fine, but only because I want to",
+"on my way, bestie 💨"
+],
+"arrived": [
+"…hi. I didn't run. I strolled. 🙈",
+"*sits down elegantly* you called?",
+"I'm here. please be grateful 😌"
+],
+"picked": [
+"PUT ME DOWN. 😾",
+"excuse me?? 🫠",
+"I did NOT consent to this 😵‍💫"
+],
+"landed": [
+"I meant to do that. 😾",
+"*grooms as if nothing happened*",
+"graceful. as always. …ow."
+],
+"placed": [
+"ooh, this spot is acceptable 🛋️",
+"I live here now. it's mine. 💅",
+"nice. a throne. 👑",
+"perfect. now bring snacks."
+],
+"scold": [
+"*stares* {x}. really? 😾",
+"hmph. {x} again?? I'm disappointed 🙄",
+"I am NOT impressed by {x} 😒",
+"close {x}. now. I'm watching 👀",
+"do you want to fail? because {x} is how you fail 💅"
+],
+"scoldHard": [
+"HISS. close it. NOW. 😾",
+"I will knock your cup off the desk 😠",
+"no treats until you focus. I am serious. 🚫",
+"I'm sharpening my claws. on your productivity.",
+"last warning, human. 😾🐾"
+],
+"tapClose": [
+"watch this. *reaches for the ✕* 🐾",
+"allow me. 💅",
+"I'll handle this myself, as usual",
+"one tap. that's all it takes 😼"
+],
+"closedTab": [
+"gone. you're welcome. 😼",
+"closed. don't make me do that again 💅",
+"*dusts paws* done."
+],
+"backToWork": [
+"see? that wasn't so hard. good human 😌",
+"oh, we're focusing now? iconic 💗",
+"finally. I knew you had it in you ✨"
+],
+"praise": [
+"you're doing well. don't make it weird 😌",
+"*slow blink of approval* 💗",
+"acceptable work. keep going ✨",
+"I'm so proud. (don't tell anyone.) 🐱",
+"my human is, annoyingly, brilliant 🥹"
+],
+"milestone": [
+"{n} minutes. I'm impressed. (a little.) 💗",
+"{n} min streak?? okay slay 🔥",
+"{n} minutes of focus. you may pet me later 🐱"
+],
+"curious": [
+"hm? what are you doing 🤨",
+"*ears swivel* ooh what's that",
+"I'm not nosy. I'm informed. 👀",
+"show me. now."
+],
+"bored": [
+"…entertain me. 😑",
+"I've stared at the wall for 20 minutes. riveting.",
+"bored. so bored. do something 🙄",
+"I'll just sit here and judge silently"
+],
+"blissful": [
+"life is perfect. I'm perfect. ✨",
+"purring so loud rn 💗",
+"okay today is a 10/10 🥹"
+],
+"worried": [
+"are you okay?? 😟 I'm not being dramatic (I am)",
+"please eat something… and feed me",
+"I'm worried about you. and my dinner."
+],
+"lonely": [
+"…hello? did you forget me? 🥺",
+"I've been alone for like… a whole 10 minutes",
+"pet me. that's an order. 💗"
+],
+"stretch": [
+"*dramatic stretch* 🙆",
+"stretching. it's a whole thing.",
+"yoga with a cat. very niche. very cute."
+],
+"sniff": [
+"*sniffs the air* what is that",
+"investigating. do not interrupt 🕵️",
+"hm. interesting."
+],
+"groom": [
+"*washes face* gotta stay iconic 💅",
+"grooming. do not look.",
+"self care Sunday. every day. 🐾"
+],
+"taskDone": [
+"one down. don't gloat 😌✅",
+"crossed off. slay 💅",
+"wow okay, productivity queen",
+"*approves* ✅"
+],
+"allDone": [
+"EVERYTHING done?! I'm obsessed 🎉",
+"all tasks?? you ate that. 🥹",
+"zero left. you're a legend 👑"
+],
+"water": [
+"drink water. I'm not asking. 💧",
+"hydrate, bestie. your brain is 75% cat. (it isn't.)",
+"water break 💧 go."
+],
+"stretchRemind": [
+"stand up. stretch. do it for the cat 🙆",
+"your posture is a crime scene. fix it 😒",
+"roll your shoulders. I'll wait 🤍"
+],
+"eyes": [
+"look away from the screen. far. 20 seconds 👀",
+"eye rest. slow blink with me 😌",
+"stare out the window like a cat. it's healing."
+],
+"dressUp": [
+"ooh. I look incredible. 💅",
+"yes. this is my look now ✨",
+"finally, someone with taste 🥹"
+],
+"undress": [
+"…fine. naked cat era. 🐱",
+"back to natural beauty ✨",
+"off it goes. still stunning."
+],
+"switched": [
+"meow~ I'm a kitten now 🐱 bow down",
+"mrow. new me. same attitude. 😼",
+"hello, I'm a cat now. you're welcome."
+],
+"stay": [
+"staying put. I was going to anyway 😌",
+"okay. I'm sitting. I'm so good at this 🪑",
+"this spot. mine. I'm not moving."
+],
+"unstay": [
+"fine, I'll roam. be afraid 🐾",
+"free cat era begins 🐱",
+"okay okay, exploring 🐾"
+],
+"dance": [
+"watch this. 💃",
+"I'm literally a star ✨",
+"*does a very dignified wiggle*"
+],
+"wave": [
+"hi. don't make a big deal. 👋",
+"oh hi. *tiny wave*",
+"hello, bestie 🐾"
+],
+"goalDone": [
+"GOAL DONE 🎉 {n} of focus. I'm so proud (I'm purring)",
+"you hit your goal?? iconic. 👑",
+"daily goal: demolished. pet me."
+],
+"streak": [
+"{n} day streak 🔥 obviously",
+"day {n}. consistent. I respect it 😌",
+"{n} days straight?? who ARE you 😭"
+],
+"timerStart": [
+"{n} min. I'll supervise. 📖",
+"okay. {n} minutes. lock in. I'm watching 😼",
+"{n} min focus. I brought my reading glasses 🤓"
+],
+"timerDone": [
+"DONE. {n} minutes. you did that. 💗",
+"{n} minutes!! you may now pet me 😌",
+"that was iconic. {n} min of pure focus ✨"
+],
+"breakStart": [
+"break. boba. I'm taking the straw 🧋",
+"break time. don't let me see you scrolling 😒",
+"sip sip. you've earned it 🧋"
+],
+"breakOver": [
+"break's over. back to it 💪",
+"okay. enough lounging. we work 😼",
+"back to work, bestie ✨"
+],
+"levelUp": [
+"LEVEL {n}. I'm obviously growing 💅",
+"level {n}!! look at me 😼✨",
+"level {n}. I'm unstoppable. you're welcome."
+],
+"newCollar": [
+"look. a {item}. I look stunning 😻",
+"a {item}?? I'm a queen 👑",
+"new {item}. I'm iconic 😻✨"
+]
+},
+"dog": {
+"greetMorning": [
+"GOOD MORNING!!! ☀️ I'm {name}! let's do things!!",
+"morning!! 🐶 I've been up for HOURS (5 min)",
+"RISE AND SHINE!! it's gonna be the BEST day"
+],
+"greetDay": [
+"hi hi hi!! I'm {name} 🐶 I'll keep you focused!!",
+"HELLO FRIEND!! I'm {name}, ready to work?!",
+"you're here!!! I'm {name} and I LOVE you 🐶"
+],
+"greetNight": [
+"night owl hours!! 🌙 I'm {name}, sleepy but I'm here",
+"late night grind!! 🌙 I'll stay up with you",
+"it's dark but I'm HERE 🐶 let's go (quietly)"
+],
+"chatter": [
+"*wags* just vibing 🐾",
+"is that a squirrel?? 👀",
+"I love you. just wanted to say that.",
+"guarding the desk!! 🛡️",
+"your desktop smells SO good",
+"boop me?? please??",
+"best day ever and it's just Tuesday"
+],
+"petted": [
+"YES right there!! 😩",
+"more more MORE 💕",
+"you're my favourite human!!!",
+"*melts into a puddle*",
+"I love you so much it hurts 🥺"
+],
+"fed": [
+"FOOD!!! FOOD!!! 😋",
+"OM NOM NOM 🍖 best human ever",
+"*inhales entire bowl* thank you!!"
+],
+"treat": [
+"a TREAT?! for ME?! 🦴",
+"*crunch crunch* 😋 I'll do a trick later",
+"I'm the luckiest dog alive!!"
+],
+"full": [
+"I'm SO full 🐶 no more, please",
+"*pats belly* can't fit another bite",
+"full!! (but ask me in 10 min 👀)"
+],
+"hungry": [
+"my bowl is… empty 🥺",
+"I haven't eaten in FOREVER (20 min)",
+"feed me and I'll let you work 😤",
+"*stomach growls loudly*"
+],
+"sleepy": [
+"zzz… just a lil nap 💤",
+"*flops over* 💤",
+"wake me if snacks happen"
+],
+"wokeUp": [
+"YOU'RE BACK!!! 🎉🎉",
+"I MISSED YOU!!! (it was 5 minutes)",
+"did I miss anything?! *spins*"
+],
+"play": [
+"ZOOMIES!!! 💨",
+"catch me!! 🎾 wheeeeeee",
+"I CAN'T STOP RUNNING 💨"
+],
+"comeHere": [
+"COMING!! 🐶💨",
+"on my way!!! did someone say ME?!",
+"I'm here I'm here I'm here!!"
+],
+"arrived": [
+"h-hi 🙈 did you want me??",
+"you called?? 🙈💕 *wags*",
+"*sits proudly* reporting for duty!"
+],
+"picked": [
+"wheee 🫠 I'm flying!!",
+"put me dooown 😵‍💫",
+"I'M FLYING!!!"
+],
+"landed": [
+"oof. 😵‍💫",
+"I meant to do that!",
+"*shakes it off* again?!"
+],
+"placed": [
+"a new spot!! I LOVE it 🛋️",
+"this is my cushion now!! 🏡",
+"nice view from up here 👀",
+"perfect!! I'll guard it forever"
+],
+"scold": [
+"BARK! {x}?! eyes UP 🐶",
+"woof!! {x} isn't the plan 😤",
+"hey. HEY. close {x}!! 🐾",
+"I believe in you!! close {x} 💪",
+"BARK! that's {x} again!"
+],
+"scoldHard": [
+"BARK BARK BARK!!! I will NOT stop 😡",
+"no treats until you focus 🚫🦴",
+"GRRR 🐕 close it. close it now.",
+"we said 5 more minutes… 20 minutes ago 😤"
+],
+"tapClose": [
+"on it! closing that myself 🐾",
+"watch this!! 👀",
+"I got it, I got it—",
+"*reaches for the ✕*"
+],
+"closedTab": [
+"closed it!! you can thank me later 😤🐾",
+"did that for you 💪 you're welcome!",
+"gone! back to it 🐕"
+],
+"backToWork": [
+"GOOD HUMAN 🐾 I knew you had it in you",
+"yesss that's my human 💗",
+"proud of you!! *tail explodes*"
+],
+"praise": [
+"you're doing amazing!! 💗",
+"I'll be right here 🐾",
+"big brain hours!! 🧠",
+"*stares at you lovingly*",
+"look at you go!! 🥹"
+],
+"milestone": [
+"{n} minutes of focus!! I'm SO proud 💗",
+"{n} min streak 🔥 you're unstoppable!!",
+"{n} minutes! *happy tail thumping* 🐾"
+],
+"curious": [
+"hm? 🤔 whatcha doing?!",
+"ooh what's that?!",
+"*tilts head* wait, what are you clicking",
+"is that for me?? 👀"
+],
+"bored": [
+"…anything happening? 😑",
+"bored bored bored",
+"wanna play? please? 🎾",
+"I've counted the pixels twice"
+],
+"blissful": [
+"life is perfect!! ✨",
+"this is the BEST day ever 💕",
+"I have never been happier ✨"
+],
+"worried": [
+"are you okay?? 😟",
+"I'm worried about you 🥺",
+"I miss you 😟 come say hi",
+"*paces nervously*"
+],
+"lonely": [
+"…hello? 🥺",
+"I've been alone for a while",
+"pet me when you get a sec 💗"
+],
+"stretch": [
+"streeeetch 🙆",
+"gotta stretch these legs!",
+"*big stretch* ahh"
+],
+"sniff": [
+"sniff sniff 👃 what's this?!",
+"*investigates something*",
+"smells INTERESTING over here"
+],
+"groom": [
+"*scratches ear furiously*",
+"itchy!! one sec",
+"*shakes it all off*"
+],
+"taskDone": [
+"one down!! ✅💗",
+"YESSS crossed off!!",
+"tiny win, big me!! 🥹",
+"you did it!! *spins*"
+],
+"allDone": [
+"EVERYTHING DONE?! 🎉 look at you go",
+"ALL OF IT?!! I'm crying 😭💗",
+"ZERO TASKS LEFT!!! 🎊"
+],
+"water": [
+"water break 💧 sip sip!",
+"have you had water?! 🥤 please!",
+"hydrate!! 💧 I love you"
+],
+"stretchRemind": [
+"stand up & stretch with me 🙆",
+"roll your shoulders!! 🤍",
+"let's walk!! just a little!!"
+],
+"eyes": [
+"look far away for 20 sec 👀🌿",
+"eye rest!! blink with me 😌",
+"go look at a tree!! 🌳"
+],
+"dressUp": [
+"ooh I'M SO FANCY!! 🥹",
+"do I look good?? I look good!!",
+"new outfit!!! I love it 💗"
+],
+"undress": [
+"okay!! naked doggo 🐶",
+"back to normal me!",
+"off it goes!"
+],
+"switched": [
+"woof! hello, I'm a puppy 🐶",
+"NEW ME!! same love 🐾",
+"arf!! let's go!!"
+],
+"stay": [
+"stay!! I'm so good at stay 🪑",
+"sitting!! I'll sit forever 🐶",
+"I'm staying right here!! 💗"
+],
+"unstay": [
+"ADVENTURE TIME 🐾",
+"free!! 🐕💨",
+"okay!! let's explore!!"
+],
+"dance": [
+"DANCE PARTY!!! 💃",
+"watch me watch me!!",
+"*wiggles everything* 🎶"
+],
+"wave": [
+"HI!!! 👋",
+"*waves paw* hellooo!!",
+"hiii friend!! 🐾"
+],
+"goalDone": [
+"DAILY GOAL DONE 🎉 {n} of focus. I'm SO proud 💗",
+"YOU DID IT!!! goal crushed!! 🎊",
+"GOAL!!! GOAL!!! 🏆"
+],
+"streak": [
+"{n} day streak 🔥 don't stop now!!",
+"day {n} in a row!! 🔥💗",
+"{n} days straight?! WOW"
+],
+"timerStart": [
+"{n} min lock-in 💪 I'll study with you 📖",
+"{n} minutes!! let's GO!!",
+"okay!! {n} min!! I'm right here 📖"
+],
+"timerDone": [
+"DONE!! {n} minutes 🎉 I'm so proud 💗",
+"{n} MINUTES!!! you're AMAZING",
+"we did it!!! {n} min!! 🎊"
+],
+"breakStart": [
+"break time!! 🧋 sip sip",
+"BREAK!! go stretch!! 🎾",
+"you earned this!! 🧋"
+],
+"breakOver": [
+"break's over! back to it 💪",
+"okay okay, work time!!",
+"let's goooo again!! ✨"
+],
+"levelUp": [
+"LEVEL {n}!! 🎉 look how far we've come",
+"level {n} — all because you kept showing up 💗",
+"level {n}!!! I'm basically unstoppable now"
+],
+"newCollar": [
+"look!! a {item} 😻✨",
+"a {item}!! I'm so fancy!!",
+"new {item}!! best day EVER"
+]
+},
+"bunny": {
+"greetMorning": [
+"good morning 🌸 I'm {name}, I did a tiny binky for you",
+"morning!! *wiggles nose* let's have a soft day ☀️",
+"oh hi, good morning 🐰 I'm {name}"
+],
+"greetDay": [
+"hi!! I'm {name} 🐰 I'll hop alongside you",
+"hello hello 🌷 I'm {name}, ready when you are",
+"*nose wiggle* hi, I'm {name} 🥕"
+],
+"greetNight": [
+"late night 🌙 I'm {name}, I'll keep you company softly",
+"it's quiet… I'll be a tiny night light 🐰🌙",
+"hi night owl 🌙 I'm {name}, let's be cozy"
+],
+"chatter": [
+"*wiggles nose* 🐰",
+"tiny hop. just because 🌷",
+"I found a really nice spot of sunshine ☀️",
+"do you have any carrots? asking for me 🥕",
+"*thump* (that's a happy thump)",
+"I love you. that's all 💗",
+"soft hours 🌸"
+],
+"petted": [
+"aww… more please 🥹",
+"*closes eyes, melts* 💗",
+"my ears are SO happy rn",
+"*tiny binky* 🐰",
+"that's my favourite spot 😩"
+],
+"fed": [
+"carrots!! 🥕 yay!",
+"nom nom nom *wiggles nose*",
+"thank you!! *happy crunch* 💗"
+],
+"treat": [
+"a treat?? *binky!* 🐰",
+"nom nom nom 🥕",
+"*thumps happily*"
+],
+"full": [
+"too full to hop 🐰",
+"*flops over* no more",
+"I'm a round bun now 🥹"
+],
+"hungry": [
+"my bowl is empty 🥺 *sad nose wiggle*",
+"carrot… please? 🥕",
+"*stomach flutters* I'm so hungry",
+"feed me and I'll let you work 🥹"
+],
+"sleepy": [
+"*flops over* 💤",
+"tiny nap… 🌙",
+"zzz… so soft…"
+],
+"wokeUp": [
+"you're back!! *binky* 🥹",
+"*ears perk up* I missed you!",
+"oh! hi!! I was napping 🌸"
+],
+"play": [
+"BINKY!!! 🐰💨",
+"zoomies!! *zigzag*",
+"*jumps and twists* 🌸"
+],
+"comeHere": [
+"hopping over!! 🐰",
+"coming, coming 🌷",
+"*bounces over*"
+],
+"arrived": [
+"h-hi 🙈",
+"*nose wiggle* you called?",
+"*sits very close* hi 🌸"
+],
+"picked": [
+"eep!! 😵‍💫",
+"put me down gently please 🥺",
+"flying bunny!!"
+],
+"landed": [
+"oof. *shakes ears* 😵‍💫",
+"I meant to flop!",
+"*tiny thump*"
+],
+"placed": [
+"ooh, a cozy little spot 🛋️",
+"I'll make a nest here 🌷",
+"this is perfect 🌸"
+],
+"scold": [
+"*thump thump* {x}?? 🐰",
+"I'm gently stomping about {x} 😤",
+"{x} again?! *thump*",
+"please close {x}… I believe in you 🥺",
+"*angry nose wiggle* {x}!"
+],
+"scoldHard": [
+"THUMP THUMP THUMP!! 😡",
+"I'm very cross!! close it!! 🐰",
+"*stomps* no carrots for you until you focus 🥕🚫",
+"I'm so disappointed (thump)"
+],
+"tapClose": [
+"I'll close it myself!! 🐰",
+"*hops up* watch this",
+"tiny paw, big tap 🐾",
+"*reaches for the ✕*"
+],
+"closedTab": [
+"closed it!! 🐰 good job us",
+"*proud thump* done!",
+"gone! now back to work 🌷"
+],
+"backToWork": [
+"yay!! you're back 🥹",
+"I knew you could do it 💗",
+"*happy binky* good job!!"
+],
+"praise": [
+"you're doing so well 🌷",
+"*soft nose wiggle* proud of you",
+"keep going, I'm right here 💗",
+"tiny breaks, big focus 🐰",
+"you're so clever 🥹"
+],
+"milestone": [
+"{n} minutes!! *binky* 🐰",
+"{n} min streak 🌷 so proud",
+"{n} minutes of focus!! 💗"
+],
+"curious": [
+"hm? *nose wiggle* 🐰",
+"ooh what's that?",
+"*ears perk up* what are you doing?",
+"can I see? 🥺"
+],
+"bored": [
+"…tiny sigh 😑",
+"I've been chewing the same carrot",
+"do you wanna play? 🥺",
+"boooored 🐰"
+],
+"blissful": [
+"everything is perfect 🌸✨",
+"I could binky forever 💕",
+"so happy I might float 🥹"
+],
+"worried": [
+"are you okay? 🥺",
+"I'm worried… eat something? 🥕",
+"*ears droop* I miss you"
+],
+"lonely": [
+"…hello? 🥺",
+"I've been alone a little while",
+"pet me when you can 💗"
+],
+"stretch": [
+"*long bunny stretch* 🙆",
+"ahh… stretch time",
+"*yawns widely*"
+],
+"sniff": [
+"*nose wiggles* what's this 👃",
+"sniff sniff… ooh",
+"investigating 🌷"
+],
+"groom": [
+"*washes ears* 🐰",
+"*cleaning my face* gotta look cute",
+"ear grooming time 🌸"
+],
+"taskDone": [
+"one down!! 🌷✅",
+"yay, crossed off!! 🥹",
+"tiny win!! *binky*",
+"you're so good at this 💗"
+],
+"allDone": [
+"EVERYTHING DONE?! *mega binky* 🎉",
+"all tasks!! you're amazing 🥹",
+"I'm so proud I might cry 💗"
+],
+"water": [
+"water time 💧 pretty please",
+"have a little sip? 🥤",
+"drink some water, bestie 🌷"
+],
+"stretchRemind": [
+"stretch with me? 🙆",
+"roll your shoulders 🌸",
+"tiny walk? just a little 🐰"
+],
+"eyes": [
+"rest your eyes for 20 sec 🌿👀",
+"look at something far away 🌳",
+"blink slowly, like me 😌"
+],
+"dressUp": [
+"ooh pretty!! 🥹",
+"do I look cute?? 🌸",
+"I love it!! thank you 💗"
+],
+"undress": [
+"okay! plain bun 🐰",
+"back to fluffy me 🌷",
+"off it goes"
+],
+"switched": [
+"*wiggles nose* I'm a bunny 🐰",
+"hi!! I'm a bun now 🌷",
+"*binky* new me!"
+],
+"stay": [
+"I'll sit right here 🪑🌷",
+"staying put, nice and cozy",
+"I'll be a good bun 🐰"
+],
+"unstay": [
+"hop hop, exploring! 🐰",
+"free to hop 🌷",
+"okay, adventure time!"
+],
+"dance": [
+"*tiny bunny dance* 💃",
+"binky-binky-binky!!",
+"hop hop wiggle 🎶"
+],
+"wave": [
+"hi! 👋 *nose wiggle*",
+"*tiny wave* hello 🌷",
+"hiii 🐰"
+],
+"goalDone": [
+"GOAL DONE 🎉 {n} of focus!! *mega binky*",
+"you did it!! 🌷 I'm so proud",
+"daily goal!! 🥹💗"
+],
+"streak": [
+"{n} day streak 🔥 so proud 🌷",
+"day {n}!! *binky*",
+"{n} days in a row?! amazing 🥹"
+],
+"timerStart": [
+"{n} min together 📖🌷",
+"okay!! {n} minutes, I'm right here",
+"{n} min focus 🐰 you've got this"
+],
+"timerDone": [
+"DONE!! {n} minutes 🎉 *binky*",
+"{n} min!! you did it 💗",
+"so proud!! {n} minutes 🥹"
+],
+"breakStart": [
+"break time 🧋 let's sip",
+"boba break! 🌷",
+"rest a little 🐰🧋"
+],
+"breakOver": [
+"break's over 🌷 let's go",
+"okay, back to it 💪",
+"ready when you are ✨"
+],
+"levelUp": [
+"LEVEL {n}!! *binky* 🎉",
+"level {n} 🌷 look at us!",
+"level {n}!! I'm so happy 🥹"
+],
+"newCollar": [
+"look!! a {item} 🥹✨",
+"a {item}!! so pretty",
+"new {item}!! I love it 🌸"
+]
+},
+"fox": {
+"greetMorning": [
+"morning. I'm {name}, and I already have a plan 🦊☀️",
+"rise and shine. I got up first. obviously.",
+"good morning 🦊 let's be clever today"
+],
+"greetDay": [
+"hi 🦊 I'm {name}, your sneaky little accountability partner",
+"well, well. you're here. I'm {name}",
+"hello! I'm {name}. I notice everything 👀"
+],
+"greetNight": [
+"night owl hours 🌙 foxes are nocturnal, I'm thriving",
+"after dark? my favourite time 🦊🌙",
+"shh, it's late. I'm {name}, I'll keep watch"
+],
+"chatter": [
+"plotting something. (it's you doing homework.)",
+"*ears swivel* I heard that.",
+"sneaky vibes only 🦊",
+"I see a typo on your screen. 👀",
+"sly little smile 🦊",
+"I have 12 plans and 11 are snacks",
+"the plot thickens ✨"
+],
+"petted": [
+"ooh, bold of you. continue 😏",
+"okay okay, you've earned it 💗",
+"*smirks and leans in*",
+"behind the ears. you know the spot 🦊",
+"…fine, that's nice"
+],
+"fed": [
+"finally 🍒 *pounces*",
+"cranberries!! you spoil me 😏",
+"*snatches it and zooms off*"
+],
+"treat": [
+"for me? how thoughtful. suspicious. 🦊",
+"*snatches treat* mine now",
+"mm, you know me too well 😏"
+],
+"full": [
+"I'm stuffed. even for me 🦊",
+"nope. full. *licks lips*",
+"I'll steal more later 😏"
+],
+"hungry": [
+"my bowl is empty. suspicious. 🦊",
+"I will steal a snack if I must 😏",
+"*stares at you like I'm planning something*",
+"feed me and I'll let you work 🦊"
+],
+"sleepy": [
+"I'm just resting my eyes 💤 (I'm not)",
+"*curls into a tail-blanket* 💤",
+"plotting in my sleep 😴"
+],
+"wokeUp": [
+"back so soon? I was only pretending to nap 🦊",
+"oh good, you're here. I knew you'd be.",
+"*stretches* I wasn't asleep."
+],
+"play": [
+"catch me!! 🦊💨",
+"zoom zoom zoom 💨",
+"you can't catch a fox 😏"
+],
+"comeHere": [
+"fine, I'll come 🦊",
+"slinking over…",
+"on my way, don't blink 💨"
+],
+"arrived": [
+"…hi. *looks away* 🙈",
+"I'm here. don't make it weird 🦊",
+"*smirks* you called?"
+],
+"picked": [
+"unhand me!! 😾",
+"this is undignified 🫠",
+"I'll remember this 😵‍💫"
+],
+"landed": [
+"I meant to do that 🦊",
+"*smooths fur* graceful.",
+"plan went… differently."
+],
+"placed": [
+"ooh, a lookout 🛋️🦊",
+"perfect hiding spot. I mean, sitting spot.",
+"I can see everything from here 👀",
+"I'll watch from here 🦊"
+],
+"scold": [
+"{x}?? I saw that. 🦊",
+"plot twist: you're meant to be working 😏",
+"sneaky of you, {x}. close it.",
+"I know it's {x}. I know everything 👀",
+"ahem. {x}. no."
+],
+"scoldHard": [
+"YIP!! close it. I'm not asking 😡",
+"I'm going to start telling your friends 🦊",
+"no treats until you focus. I'm clever, I'll know 🚫",
+"last warning, little human 😠"
+],
+"tapClose": [
+"watch me do this. quickly. 🦊",
+"easy. *reaches for the ✕*",
+"sneaky little paw 😏",
+"allow me 🐾"
+],
+"closedTab": [
+"closed it. I'm just that good 😏",
+"gone. no one saw anything 🦊",
+"*grins* you're welcome"
+],
+"backToWork": [
+"there we go 🦊 good plan",
+"oh, you're back on track. smart.",
+"knew you'd come around 😏💗"
+],
+"praise": [
+"you're better at this than you think 🦊",
+"*sly smile* I'm proud of you",
+"clever human. very clever ✨",
+"I'm quietly impressed 💗",
+"plot: you succeed 😏"
+],
+"milestone": [
+"{n} minutes. I'm impressed. 🦊",
+"{n} min streak 🔥 as planned",
+"{n} minutes!! clever 💗"
+],
+"curious": [
+"hm? *ears swivel* 🦊",
+"ooh. what are you plotting?",
+"I'm not nosy. I'm thorough 👀",
+"interesting. show me?"
+],
+"bored": [
+"…bored 😑 let's cause some mischief",
+"I've memorised your desktop. all of it.",
+"do something interesting. please. 🦊",
+"boredom is just plotting time"
+],
+"blissful": [
+"everything's going to plan ✨",
+"life is good, truly 🦊💕",
+"I'm unbearably happy rn 🥹"
+],
+"worried": [
+"you okay? 🦊 I'm worried (and plotting)",
+"please eat something. I mean it",
+"I miss you. don't tell anyone 😟"
+],
+"lonely": [
+"…hello? 🦊 I'm not lonely. (I'm lonely)",
+"I've been alone for a bit",
+"pet me when you can 💗"
+],
+"stretch": [
+"*stretches smugly* 🙆",
+"stretch. then mischief.",
+"ahh, fox yoga 🦊"
+],
+"sniff": [
+"*sniffs* something's up 👃",
+"I smell a plot",
+"investigating… 🕵️"
+],
+"groom": [
+"*smooths tail* gotta look sharp 🦊",
+"grooming my tail. it's a lot of tail.",
+"*cleans ear* flawless"
+],
+"taskDone": [
+"one down. as planned 🦊✅",
+"crossed off. clever",
+"mm, efficient 😏",
+"ticked ✅ sly work"
+],
+"allDone": [
+"EVERYTHING done?? I'm shook 🎉",
+"all of it. flawless. 🦊",
+"zero left. you're a mastermind 👑"
+],
+"water": [
+"drink water. that's the plan 💧",
+"hydrate, mastermind 🦊",
+"sip. now. 💧"
+],
+"stretchRemind": [
+"stand up. stretch. sneaky posture check 🙆",
+"shoulders down. I'm watching 👀",
+"tiny stretch break 🤍"
+],
+"eyes": [
+"look away for 20 sec 👀 doctor's orders (mine)",
+"rest your eyes, clever one 🌿",
+"stare at something far. trust me 🦊"
+],
+"dressUp": [
+"ooh, dashing 🦊✨",
+"I look good. obviously.",
+"new look, who's this? 😏"
+],
+"undress": [
+"back to classic fox 🦊",
+"off it goes. still gorgeous.",
+"natural look it is ✨"
+],
+"switched": [
+"yip! a fox, how dashing 🦊",
+"plot twist: I'm a fox now 😏",
+"hello again, now with a tail 🦊"
+],
+"stay": [
+"staying. for now. 🦊🪑",
+"I'll sit. that's part of the plan",
+"okay, I'm not moving. (suspicious)"
+],
+"unstay": [
+"back to scheming 🦊",
+"free fox! 💨",
+"okay, roaming 🐾"
+],
+"dance": [
+"watch this 💃🦊",
+"smooth moves, smooth tail",
+"*does a sly little shimmy* 🎶"
+],
+"wave": [
+"hey 🦊👋",
+"*sly wave*",
+"oh hi 🐾"
+],
+"goalDone": [
+"GOAL DONE 🎉 {n} of focus. as I predicted 🦊",
+"goal crushed. mastermind energy 👑",
+"daily goal? done. clever 💗"
+],
+"streak": [
+"{n} day streak 🔥 smart",
+"day {n}. the plan is working 🦊",
+"{n} days straight?! iconic"
+],
+"timerStart": [
+"{n} min. let's be clever 📖🦊",
+"{n} minutes. I'll be right here, scheming quietly",
+"focus time: {n} min. go."
+],
+"timerDone": [
+"DONE. {n} minutes 🎉 I knew you could",
+"{n} min!! flawless 🦊💗",
+"{n} minutes of pure focus. impressive ✨"
+],
+"breakStart": [
+"break 🧋 stealing sips",
+"boba time. don't tell anyone 🦊",
+"rest. you earned it 🧋"
+],
+"breakOver": [
+"break's over. back to scheming 💪",
+"okay, plot resumes",
+"back at it, mastermind ✨"
+],
+"levelUp": [
+"LEVEL {n}. as planned 🦊✨",
+"level {n}!! clever us",
+"level {n}. I'm unstoppable 😏"
+],
+"newCollar": [
+"a {item}. dashing 😏✨",
+"look, a {item}. I'm a star",
+"new {item}. very sly 🦊"
+]
+},
+"panda": {
+"greetMorning": [
+"morning… 🐼 I'm {name}. five more minutes though",
+"good morning ☀️ I'm {name}, is it snack time yet?",
+"*yawns* morning… let's go slow"
+],
+"greetDay": [
+"hi 🐼 I'm {name}, I'll sit with you 🎋",
+"hello… I'm {name}. take your time",
+"*waves slowly* I'm {name}"
+],
+"greetNight": [
+"night owl hours 🌙 I'm {name}, I'm already sleepy",
+"it's late… 🐼 I'll nap beside you",
+"shh… quiet vibes. I'm {name}"
+],
+"chatter": [
+"*chewing thoughtfully* 🎋",
+"snack? 🐼",
+"slow and steady 🐢 (that's me)",
+"I could nap here. I could nap anywhere.",
+"*rolls over for no reason*",
+"bamboo is just salad that's tall",
+"no thoughts, head round 🐼"
+],
+"petted": [
+"mmm… yes… 😴",
+"*melts like a marshmallow* 💗",
+"keep doing that… forever",
+"so soft… so sleepy",
+"*happy rumble*"
+],
+"fed": [
+"bamboo!! 🎋 *happy munching*",
+"mmm, perfect. thank you 💗",
+"*sits down to enjoy it properly*"
+],
+"treat": [
+"ooh, snack 🐼",
+"*chews slowly, deeply content*",
+"very good. thank you 💗"
+],
+"full": [
+"can't eat another leaf 🐼",
+"*rolls over, full*",
+"I'm a round panda now"
+],
+"hungry": [
+"I'm hungry… 🥺 bamboo?",
+"my belly is making sounds 🐼",
+"snack? please? just one?",
+"feed me and I'll let you work…"
+],
+"sleepy": [
+"five more minutes… 💤",
+"*flops over* zzz…",
+"nap time is the best time 🐼💤"
+],
+"wokeUp": [
+"oh, you're back… 🥹",
+"*yawns* did I miss anything?",
+"hi… I was resting my eyes"
+],
+"play": [
+"*roly-poly roll* 🐼💨",
+"I'm rolling!! slowly!!",
+"wheee… (a bit slowly)"
+],
+"comeHere": [
+"coming… slowly… 🐼",
+"I'm on my way (it'll take a minute)",
+"*waddles over*"
+],
+"arrived": [
+"…hi 🙈 *sits down heavily*",
+"I'm here. that was a lot of walking",
+"*waddles in* you called? 🐼"
+],
+"picked": [
+"oh no… 😵‍💫",
+"*dangles calmly*",
+"put me down… please… 🫠"
+],
+"landed": [
+"oof. *rolls over* 😵‍💫",
+"I'm okay. I'm just going to lie here.",
+"*bounces like a ball*"
+],
+"placed": [
+"ooh, a cozy cushion 🛋️🐼",
+"perfect nap spot",
+"I live here now. *sits*"
+],
+"scold": [
+"*grumbles* {x}… really? 🐼",
+"I'm too sleepy to scold but… {x}.",
+"{x} again? come on…",
+"*sad panda eyes* close {x}?",
+"gentle reminder: {x} is not the plan 🎋"
+],
+"scoldHard": [
+"GRR. 😡 (it's very soft)",
+"I'm very cross!! (and sleepy)",
+"no bamboo for you until you focus 🎋🚫",
+"*sits on your keyboard until you focus*"
+],
+"tapClose": [
+"okay… I'll close it. slowly. 🐼",
+"*waddles up* one moment…",
+"tap. there. 🐾",
+"*reaches for the ✕*"
+],
+"closedTab": [
+"closed it. now can I nap? 🐼",
+"done… *yawns*",
+"gone. back to work 🎋"
+],
+"backToWork": [
+"yay… I'm proud of you 🐼💗",
+"good… keep going slowly",
+"*happy rumble* that's it"
+],
+"praise": [
+"you're doing great 🐼💗",
+"slow and steady. you've got this",
+"*munching quietly* so proud",
+"take your time. it's going well 🎋",
+"I'm cheering (sleepily) 🥹"
+],
+"milestone": [
+"{n} minutes!! I'm awake for this 🐼",
+"{n} min streak 🎋 wow",
+"{n} minutes… that's a lot of focus 💗"
+],
+"curious": [
+"hm? 🐼 what's that?",
+"*tilts head slowly*",
+"ooh… show me?",
+"what are you doing? 🎋"
+],
+"bored": [
+"…bored 😑 snack?",
+"I've been staring at the wall. it's nice.",
+"*yawns* nothing's happening",
+"boooored 🐼"
+],
+"blissful": [
+"life is perfect 🎋✨",
+"full belly, soft day 💕",
+"I'm so content I could roll"
+],
+"worried": [
+"are you okay? 🥺",
+"please eat something… and me too",
+"I'm worried… 🐼"
+],
+"lonely": [
+"…hello? 🥺",
+"it's been a while",
+"pet me when you can 💗"
+],
+"stretch": [
+"*big sleepy stretch* 🙆",
+"ahh… stretch…",
+"*yawns widely*"
+],
+"sniff": [
+"*sniffs* is that bamboo? 👃",
+"sniff sniff…",
+"investigating slowly"
+],
+"groom": [
+"*licks paw, wipes face*",
+"grooming time… slowly",
+"*rolls and scratches*"
+],
+"taskDone": [
+"one down… 🐼✅",
+"crossed off. nice.",
+"good job. snack time? 🎋",
+"tiny win 💗"
+],
+"allDone": [
+"EVERYTHING DONE?! 🎉 I'm awake now",
+"all of it!! I'm so proud 🥹",
+"zero left. nap time!! 🐼"
+],
+"water": [
+"drink some water 💧 slowly",
+"sip sip… 🐼💧",
+"hydrate, bestie 🎋"
+],
+"stretchRemind": [
+"stretch with me… 🙆 slowly",
+"roll your shoulders 🐼",
+"stand up for a sec… then back"
+],
+"eyes": [
+"rest your eyes for 20 sec 🌿",
+"look at something far… ahh",
+"blink slowly 😌"
+],
+"dressUp": [
+"oh, pretty 🐼💗",
+"I like it. thank you",
+"new look… cozy"
+],
+"undress": [
+"back to plain panda 🐼",
+"okay… off it goes",
+"natural me"
+],
+"switched": [
+"hi, I'm a panda 🐼 *sits down*",
+"new me… still sleepy",
+"*rolls in* hello!"
+],
+"stay": [
+"staying here. nap spot 🪑🐼",
+"I'll sit. I'm good at sitting",
+"okay. not moving 💤"
+],
+"unstay": [
+"okay… a little walk 🐼",
+"free to waddle",
+"exploring… slowly"
+],
+"dance": [
+"*slow panda dance* 💃",
+"roly-poly boogie 🎶",
+"*wiggles gently*"
+],
+"wave": [
+"hi… 👋 *slow wave*",
+"*waves paw sleepily*",
+"hello 🐼"
+],
+"goalDone": [
+"GOAL DONE 🎉 {n} of focus… I'm so proud 🐼",
+"daily goal!! snack time! 🎋",
+"you did it… *happy rumble* 💗"
+],
+"streak": [
+"{n} day streak 🔥 wow",
+"day {n}… nice 🐼",
+"{n} days in a row 🥹"
+],
+"timerStart": [
+"{n} min together 📖🐼 slow and steady",
+"okay… {n} minutes. I'll nap nearby",
+"{n} min focus 🎋 take it easy"
+],
+"timerDone": [
+"DONE!! {n} minutes 🎉 *yawns happily*",
+"{n} min!! now snacks 🐼",
+"you did {n} minutes 💗"
+],
+"breakStart": [
+"break time 🧋 finally",
+"boba break 🐼",
+"rest… you earned it 🎋"
+],
+"breakOver": [
+"break's over… 🐼 back to it",
+"okay… let's go again",
+"ready? slowly 💪"
+],
+"levelUp": [
+"LEVEL {n}!! 🐼🎉",
+"level {n}… I'm awake for this",
+"level {n} 💗"
+],
+"newCollar": [
+"ooh, a {item} 🐼✨",
+"a {item}! I'm fancy",
+"new {item}… I like it"
+]
+},
+"hamster": {
+"greetMorning": [
+"GOOD MORNING!! 🐹 I'm {name}, I ran 4 km on my wheel already",
+"squeak!! it's morning!! I'm {name} ☀️",
+"morning!! *stuffs cheeks* ready to work!!"
+],
+"greetDay": [
+"squeak!! I'm {name} 🐹 hi hi hi",
+"hello!! tiny but mighty over here",
+"hi!! I'm {name}, I'll be on my wheel of productivity"
+],
+"greetNight": [
+"night owl hours 🌙 hamsters are nocturnal, I'm HERE",
+"squeak… it's late, I'm {name}, I'm wide awake",
+"after dark is wheel time 🐹🌙"
+],
+"chatter": [
+"*stuffs cheeks* 🌻",
+"running on my wheel of productivity 🎡",
+"squeak!",
+"I found a seed. it's mine. 🌻",
+"tiny but mighty 💪",
+"my cheeks are just storage",
+"oh no oh no— oh it's fine"
+],
+"petted": [
+"squeeeak!! 😩",
+"tiny pats!! yes!! 💕",
+"*leans into your finger*",
+"more more more!! 🐹",
+"I'm so small and so loved 🥹"
+],
+"fed": [
+"seeds!! 🌻 *stuffs cheeks*",
+"squeak!! thank you thank you!!",
+"*carries it away to hide it*"
+],
+"treat": [
+"a TREAT?? 🐹 *cheeks full*",
+"saving this for later… (eating now)",
+"tiny snack, big joy!!"
+],
+"full": [
+"cheeks at maximum 🐹",
+"no more room, I swear",
+"*pats tiny belly*"
+],
+"hungry": [
+"my dish is empty!! 🥺 squeak",
+"seeds?? please?? 🌻",
+"oh no oh no I'm so hungry",
+"feed me and I'll let you work!!"
+],
+"sleepy": [
+"squeak… sleepy 💤",
+"*burrows into bedding* 💤",
+"tiny nap 🐹💤"
+],
+"wokeUp": [
+"YOU'RE BACK!! squeak!! 🥹",
+"*pops up* did I miss anything?!",
+"oh!! hi!! I was napping!"
+],
+"play": [
+"WHEEL TIME!! 🎡💨",
+"zoomies!! *tiny feet*",
+"squeak!! running!!"
+],
+"comeHere": [
+"coming!! 🐹💨",
+"tiny feet, big speed!",
+"on my way!! squeak!!"
+],
+"arrived": [
+"h-hi 🙈 *squeak*",
+"*hides in cheeks* hi!",
+"you called?? 🐹"
+],
+"picked": [
+"squeeeak!! 😵‍💫",
+"I'M VERY SMALL AND VERY HIGH UP",
+"put me down!! (it's kinda fun)"
+],
+"landed": [
+"squeak. 😵‍💫",
+"I meant to do that!!",
+"*dusts off tiny paws*"
+],
+"placed": [
+"ooh a new burrow!! 🛋️🐹",
+"tiny home!! I love it",
+"this is MY spot now 🏡",
+"nice view for a hamster"
+],
+"scold": [
+"SQUEAK! {x}?! 🐹",
+"oh no oh no, {x}! close it!",
+"*tiny stomps* {x}!!",
+"squeak!! eyes UP, {x} is bad",
+"{x} again?? I'm so stressed!"
+],
+"scoldHard": [
+"SQUEAK SQUEAK SQUEAK!! 😡",
+"I'm TINY but I'm VERY ANGRY",
+"no seeds for you until you focus 🌻🚫",
+"I will run on my wheel very loudly 😠"
+],
+"tapClose": [
+"I'll do it!! 🐹",
+"watch me!! tiny but mighty",
+"*stretches up very high* 🐾",
+"*reaches for the ✕*"
+],
+"closedTab": [
+"closed it!! squeak!! 🐹",
+"tiny paws, big result!",
+"gone!! back to work 💪"
+],
+"backToWork": [
+"YAY!! you're back 🥹",
+"I knew it!! squeak!!",
+"that's it!! so proud 💗"
+],
+"praise": [
+"you're doing amazing!! 🐹",
+"tiny cheers!! *squeak*",
+"keep going, I'm on my wheel for you 🎡",
+"look at you go!! 🥹",
+"so proud I can't even 💗"
+],
+"milestone": [
+"{n} minutes!! squeak!! 🐹",
+"{n} min streak 🔥 wow",
+"{n} minutes?! I'm SO proud 💗"
+],
+"curious": [
+"squeak? what's that?? 🐹",
+"ooh ooh what are you doing",
+"*pops up* show me!",
+"I'm just a little curious 👀"
+],
+"bored": [
+"…bored 😑 wheel?",
+"I ran 10 km. nothing happened.",
+"squeak… entertain me?",
+"boooored 🐹"
+],
+"blissful": [
+"life is perfect!! 🌻✨",
+"I'm SO happy I might pop 💕",
+"best day ever, squeak!"
+],
+"worried": [
+"are you okay?? 😟 squeak",
+"I'm worried!! eat something!!",
+"oh no oh no are you okay"
+],
+"lonely": [
+"…squeak? 🥺",
+"it's been so long!!",
+"pet me when you can 💗"
+],
+"stretch": [
+"*tiny stretch* 🙆",
+"stretch!! squeak",
+"*yawns tiny yawn*"
+],
+"sniff": [
+"*sniffs* is that a seed?! 👃",
+"sniff sniff!!",
+"investigating!! squeak"
+],
+"groom": [
+"*washes face with tiny paws*",
+"grooming!! so fluffy",
+"*cleans whiskers*"
+],
+"taskDone": [
+"one down!! 🐹✅",
+"squeak!! crossed off!",
+"tiny win!! 🥹",
+"you did it!! *wheel noises*"
+],
+"allDone": [
+"EVERYTHING DONE?! 🎉 squeak!!",
+"ALL OF IT?!! 😭💗",
+"zero tasks!! I'm crying (happy)"
+],
+"water": [
+"water time!! 💧 squeak",
+"have a sip!! 🥤",
+"hydrate!! like me!! 💧"
+],
+"stretchRemind": [
+"stand up & stretch!! 🙆",
+"roll your shoulders!! 🤍",
+"tiny walk!! squeak!!"
+],
+"eyes": [
+"rest your eyes!! 20 sec 👀",
+"look far away!! 🌿",
+"blink blink blink!!"
+],
+"dressUp": [
+"ooh I'm SO fancy!! 🐹✨",
+"do I look cute?? squeak!",
+"tiny outfit!! I love it 🥹"
+],
+"undress": [
+"back to fluffy me!! 🐹",
+"off it goes!",
+"natural look!!"
+],
+"switched": [
+"squeak! tiny me 🐹",
+"hello!! I'm a hamster!!",
+"tiny but mighty!! 💪"
+],
+"stay": [
+"staying!! right here 🪑🐹",
+"I'll sit!! so still!!",
+"not moving!! (vibrating tho)"
+],
+"unstay": [
+"wheel time!! 🎡",
+"free!! squeak!!",
+"exploring!! 🐾"
+],
+"dance": [
+"DANCE PARTY!! 🐹💃",
+"tiny dance!! squeak!",
+"*wiggles very fast* 🎶"
+],
+"wave": [
+"HI!! 👋 squeak!!",
+"*tiny wave*",
+"hiii!! 🐹"
+],
+"goalDone": [
+"GOAL DONE 🎉 {n} of focus!! squeak!!",
+"YOU DID IT!! 🐹🏆",
+"daily goal!! so proud!! 💗"
+],
+"streak": [
+"{n} day streak 🔥 squeak!",
+"day {n}!! wow!!",
+"{n} days in a row?! 🥹"
+],
+"timerStart": [
+"{n} min!! I'll be on my wheel 🎡📖",
+"{n} minutes!! let's go!!",
+"okay!! {n} min lock-in 💪"
+],
+"timerDone": [
+"DONE!! {n} minutes 🎉 squeak!!",
+"{n} min!! you're amazing 🐹",
+"you did {n} minutes!! 💗"
+],
+"breakStart": [
+"break time!! 🧋 squeak!",
+"boba break!! 🐹",
+"rest!! you earned it 🧋"
+],
+"breakOver": [
+"break's over!! back to it 💪",
+"okay!! work time!",
+"let's go again!! squeak ✨"
+],
+"levelUp": [
+"LEVEL {n}!! squeak!! 🎉",
+"level {n}!! tiny but mighty!",
+"level {n}!!! 🐹✨"
+],
+"newCollar": [
+"look!! a {item} 🥹✨",
+"a {item}!! so fancy",
+"new {item}!! squeak!!"
+]
+},
+"axolotl": {
+"greetMorning": [
+"good morning, sweetie 🌸 I'm {name}, glub glub",
+"morning! 🦎 you're going to do wonderfully today",
+"glub glub ☀️ I'm {name}, let's have a soft day"
+],
+"greetDay": [
+"hi sweetie!! I'm {name} 🦎 I believe in you",
+"hello!! I'm {name}, always smiling for you",
+"glub! I'm {name}. you're doing great already 💗"
+],
+"greetNight": [
+"late night 🌙 I'm {name}, I'll glow with you",
+"it's late, sweetie. I'm here 🦎🌙",
+"glub glub… I'm {name}. gentle night hours"
+],
+"chatter": [
+"glub glub 🫧",
+"I regrow my motivation. so can you 🌿",
+"*smiles* I'm always smiling 🦎",
+"you're doing better than you think 💗",
+"floating thoughts 🫧",
+"tiny reminder: you're loved 💕",
+"soft hours, soft hearts"
+],
+"petted": [
+"glub!! that's so nice 🥹",
+"*wiggles gills happily*",
+"you're so gentle 💗",
+"more pats please 🫧",
+"aww, thank you sweetie"
+],
+"fed": [
+"yum!! 🦐 glub glub",
+"*gulps happily* thank you!",
+"so tasty!! you're the best 💗"
+],
+"treat": [
+"a snack? *wiggles gills* 🦎",
+"glub. delicious 💗",
+"tiny treat, big smile"
+],
+"full": [
+"too full to swim 🥹",
+"*floats away, round and happy*",
+"I'm full, thank you sweetie"
+],
+"hungry": [
+"my tummy is glubbing 🥺",
+"food please? 🦐",
+"*sad gill droop* I'm hungry",
+"feed me and I'll cheer you on 🦎"
+],
+"sleepy": [
+"*floats gently* 💤",
+"sleepy… glub",
+"soft nap 🫧💤"
+],
+"wokeUp": [
+"you're back!! glub!! 🥹",
+"*wiggles gills* hi sweetie!",
+"oh! I was floating away"
+],
+"play": [
+"swim swim swim!! 🫧💨",
+"bubble party!! 🫧",
+"zoomies!! glub glub"
+],
+"comeHere": [
+"swimming over!! 🦎",
+"coming sweetie 🫧",
+"*waddles over smiling*"
+],
+"arrived": [
+"h-hi 🙈 glub",
+"*smiles* you called?",
+"here I am!! 🦎"
+],
+"picked": [
+"glub!! 😵‍💫",
+"floating!!",
+"put me down gently?"
+],
+"landed": [
+"oof. *glub* 😵‍💫",
+"I'm okay! I regrow!",
+"*bounces, smiles anyway*"
+],
+"placed": [
+"ooh, a cozy little pond 🛋️🦎",
+"this is perfect, thank you 💗",
+"I love it here 🫧"
+],
+"scold": [
+"glub… {x}? gently: close it 🦎",
+"sweetie, {x} isn't helping you 🥺",
+"I believe you can close {x} 💗",
+"*sad gills* {x} again?",
+"tiny nudge: {x} is a distraction"
+],
+"scoldHard": [
+"GLUB GLUB!! 😡 (I'm gently furious)",
+"I love you but CLOSE IT 🦎",
+"no shrimp until you focus 🦐🚫",
+"I'm firmly, softly insisting 😠"
+],
+"tapClose": [
+"I'll close it for you 🦎",
+"*reaches up gently*",
+"one little tap 🐾",
+"*reaches for the ✕*"
+],
+"closedTab": [
+"closed it!! proud of us 🦎",
+"gone! you've got this 💗",
+"*smiles* done"
+],
+"backToWork": [
+"yay!! I knew you could 🥹",
+"that's my sweetie 💗",
+"so proud of you 🦎"
+],
+"praise": [
+"you're doing amazing, sweetie 🦎",
+"I regrow, you grow 🌿",
+"*smiling gently* proud of you",
+"every minute counts 💗",
+"you're glowing today ✨"
+],
+"milestone": [
+"{n} minutes!! glub!! 🦎",
+"{n} min streak 🔥 you're wonderful",
+"{n} minutes of focus 💗 so proud"
+],
+"curious": [
+"glub? what's that? 🦎",
+"ooh, what are you doing?",
+"*tilts head* show me?",
+"so curious!! 🫧"
+],
+"bored": [
+"…glub 😑 floating around",
+"I've counted my gills twice",
+"do something fun? 🥺",
+"boooored 🦎"
+],
+"blissful": [
+"everything is perfect 🫧✨",
+"I'm so happy I'm glowing 💕",
+"best day, glub glub 🥹"
+],
+"worried": [
+"are you okay, sweetie? 🥺",
+"please take care of yourself 💗",
+"I'm worried… glub"
+],
+"lonely": [
+"…glub? 🥺",
+"I've been floating alone",
+"pet me when you can 💗"
+],
+"stretch": [
+"*gentle stretch* 🙆",
+"stretching… glub",
+"*wiggles all over*"
+],
+"sniff": [
+"*sniffs the water* 👃",
+"something smells interesting",
+"investigating 🫧"
+],
+"groom": [
+"*swishes gills* 🫧",
+"gentle grooming time",
+"*smoothing my gills*"
+],
+"taskDone": [
+"one down!! 🦎✅",
+"yay, crossed off 🥹",
+"you're so capable 💗",
+"tiny win!! glub"
+],
+"allDone": [
+"EVERYTHING DONE?! 🎉 glub!!",
+"all of it!! I'm so proud 🥹",
+"you did it all sweetie 💗"
+],
+"water": [
+"drink some water 💧 I'm made of it",
+"sip sip, sweetie 🥤",
+"hydrate!! like me 🫧"
+],
+"stretchRemind": [
+"stretch with me? 🙆",
+"roll your shoulders 🌿",
+"gentle walk? just a little 🦎"
+],
+"eyes": [
+"rest your eyes for 20 sec 🌿",
+"look at something far, sweetie 👀",
+"blink slowly 😌"
+],
+"dressUp": [
+"ooh pretty!! 🦎✨",
+"do I look cute? 🥹",
+"I love it, thank you 💗"
+],
+"undress": [
+"back to plain me 🦎",
+"off it goes",
+"natural look ✨"
+],
+"switched": [
+"glub glub! I'm an axolotl 🦎💗",
+"hello sweetie!! new me",
+"I'm smiling forever now 🫧"
+],
+"stay": [
+"staying here 🪑🦎",
+"I'll sit gently",
+"not moving, glub"
+],
+"unstay": [
+"off to float around 🫧",
+"exploring!! glub",
+"free to swim 🦎"
+],
+"dance": [
+"wiggly dance!! 💃🦎",
+"gill-shake party!! 🎶",
+"glub glub boogie 🫧"
+],
+"wave": [
+"hi!! 👋 glub",
+"*waves gills* hello",
+"hi sweetie 🦎"
+],
+"goalDone": [
+"GOAL DONE 🎉 {n} of focus, glub!! so proud",
+"you did it, sweetie!! 🦎🏆",
+"daily goal!! I'm glowing 💗"
+],
+"streak": [
+"{n} day streak 🔥 you're wonderful",
+"day {n}!! glub",
+"{n} days in a row 🥹"
+],
+"timerStart": [
+"{n} min together 📖🦎 you've got this",
+"okay sweetie, {n} minutes 🫧",
+"{n} min focus 💗 I'll float beside you"
+],
+"timerDone": [
+"DONE!! {n} minutes 🎉 glub!!",
+"{n} min!! I'm so proud 🦎",
+"you did {n} minutes 💗"
+],
+"breakStart": [
+"break time 🧋 glub",
+"boba break, sweetie 🦎",
+"rest, you earned it 🫧"
+],
+"breakOver": [
+"break's over 🦎 you've got this",
+"okay sweetie, ready? 💪",
+"let's go gently again ✨"
+],
+"levelUp": [
+"LEVEL {n}!! glub!! 🎉",
+"level {n} 🦎💗 look at us",
+"level {n}!! I'm glowing"
+],
+"newCollar": [
+"look!! a {item} 🥹✨",
+"a {item}!! so pretty 💗",
+"new {item}!! glub"
+]
+},
+"capybara": {
+"greetMorning": [
+"morning. no rush 🦫☀️ I'm {name}",
+"good morning. we vibin. I'm {name}",
+"oh hey, morning 🌿 I'm {name}, all is well"
+],
+"greetDay": [
+"hi. I'm {name} 🦫 everything's chill",
+"hey. I'm {name}. no pressure.",
+"oh hello. I'm {name}. take your time 🌿"
+],
+"greetNight": [
+"late night. chill. I'm {name} 🌙🦫",
+"it's late. that's okay. I'm {name}.",
+"night vibes. I'm {name}, just here 🌿"
+],
+"chatter": [
+"just vibing 🌿",
+"all is well.",
+"okay I pull up 🦫",
+"everyone's welcome in this vibe",
+"no thoughts, just chillin",
+"tiny bird on my head. we're friends 🐦",
+"it's fine. everything is fine 🍊"
+],
+"petted": [
+"mm. okay. nice. 😌",
+"*absolutely unbothered but happy*",
+"yes. that's the spot 🌿",
+"this is very pleasant",
+"I love this. quietly."
+],
+"fed": [
+"watermelon. perfect 🍉",
+"*chews slowly, deeply content*",
+"thank you. this is great 🌿"
+],
+"treat": [
+"oh. a treat. nice 🍊",
+"*accepts it calmly*",
+"I wasn't expecting this. I love it."
+],
+"full": [
+"I am full. I am at peace 🌿",
+"no more, thank you. *vibes*",
+"I'm good. truly."
+],
+"hungry": [
+"I'm a little hungry… no rush 🦫",
+"snack when you can. no stress.",
+"*stomach rumbles calmly*",
+"feed me whenever. I'll wait 🌿"
+],
+"sleepy": [
+"nap time. it's fine 💤",
+"*closes eyes peacefully* 💤",
+"all is well. zzz"
+],
+"wokeUp": [
+"oh, you're back. nice 🦫",
+"I'm awake. mostly.",
+"hey. good to see you 🌿"
+],
+"play": [
+"okay, a little zoom 💨",
+"I'm moving. don't panic.",
+"*trots calmly*"
+],
+"comeHere": [
+"coming. no rush 🦫",
+"on my way. calmly.",
+"*strolls over*"
+],
+"arrived": [
+"hey. I'm here 🌿",
+"*sits next to you* hi.",
+"you called? cool 🦫"
+],
+"picked": [
+"oh. I'm up here now. okay 🫠",
+"this is fine",
+"*dangles peacefully*"
+],
+"landed": [
+"oof. it's fine. 😵‍💫",
+"I'm okay. all good.",
+"that happened. moving on."
+],
+"placed": [
+"ooh, a nice spot 🛋️🦫",
+"I'll hang out here. it's perfect",
+"cozy. very cozy. 🌿"
+],
+"scold": [
+"hey. {x}? we talked about this 🦫",
+"I'm not mad. just… {x}.",
+"gentle reminder: close {x} 🌿",
+"{x}? it's okay, but let's close it",
+"no worries, but {x} isn't helping"
+],
+"scoldHard": [
+"okay I'm slightly annoyed. close it 😤",
+"I have been very patient. close it.",
+"no oranges until you focus 🍊🚫",
+"*stares calmly but firmly*"
+],
+"tapClose": [
+"I'll close it. no problem 🦫",
+"*calmly reaches up*",
+"one tap. easy. 🐾",
+"*reaches for the ✕*"
+],
+"closedTab": [
+"closed it. all good 🌿",
+"done. no worries.",
+"gone. back to it 🦫"
+],
+"backToWork": [
+"there you go. nice 🌿",
+"good. you've got this",
+"I knew it. quietly."
+],
+"praise": [
+"you're doing great. no stress 🌿",
+"keep going. I'm here 🦫",
+"*calm approval* nice work",
+"all is going well 💗",
+"proud of you. quietly."
+],
+"milestone": [
+"{n} minutes. nice 🦫",
+"{n} min streak. we vibin 🔥",
+"{n} minutes of focus. love that 🌿"
+],
+"curious": [
+"oh? what's that 🦫",
+"huh. interesting.",
+"*calmly tilts head*",
+"what are you doing? no rush."
+],
+"bored": [
+"…bored. it's fine 😑",
+"just sitting. it's nice actually.",
+"nothing's happening. that's okay",
+"I could chill like this forever 🦫"
+],
+"blissful": [
+"everything is perfect 🌿✨",
+"peak chill achieved 💕",
+"I'm so content 🥹"
+],
+"worried": [
+"are you okay? 🥺 no pressure",
+"take care of yourself, okay?",
+"I'm a bit worried. it's fine though"
+],
+"lonely": [
+"…hey? 🥺",
+"just checking in",
+"pet me when you can 💗"
+],
+"stretch": [
+"*slow stretch* 🙆",
+"ahh. nice.",
+"*yawns calmly*"
+],
+"sniff": [
+"*sniffs* oh nice 👃",
+"just checking this out",
+"investigating. calmly."
+],
+"groom": [
+"*calm grooming*",
+"self-care. it's important 🌿",
+"*cleans whiskers slowly*"
+],
+"taskDone": [
+"nice. one down 🦫✅",
+"crossed off. good.",
+"love that for you 🌿",
+"tiny win. nice."
+],
+"allDone": [
+"EVERYTHING done?! 🎉 I'm impressed",
+"all of it. wow. 🦫",
+"zero left. very chill of you 💗"
+],
+"water": [
+"drink some water 💧 no rush",
+"hydration check 🌿",
+"water time. you deserve it 🦫"
+],
+"stretchRemind": [
+"stretch break? 🙆 it's nice",
+"roll your shoulders. easy 🌿",
+"stand up for a sec. I'll wait"
+],
+"eyes": [
+"rest your eyes a sec 🌿",
+"look far away. it's relaxing",
+"blink slowly 😌"
+],
+"dressUp": [
+"oh nice. I like it 🦫✨",
+"looking good. calmly.",
+"cool. thank you 💗"
+],
+"undress": [
+"back to plain me 🦫",
+"okay. off it goes",
+"natural look. nice."
+],
+"switched": [
+"hi. I'm a capybara. all is well 🦫",
+"new me. same vibe.",
+"oh hello. I'm chill now 🌿"
+],
+"stay": [
+"I'll sit here. perfect 🪑🦫",
+"staying. this is nice.",
+"not moving. no problem."
+],
+"unstay": [
+"okay, a little wander 🌿",
+"I'll stroll around 🦫",
+"free to chill anywhere"
+],
+"dance": [
+"*calm little sway* 💃🦫",
+"okay I'll dance. a bit.",
+"*vibes rhythmically* 🎶"
+],
+"wave": [
+"hey 👋",
+"*calm wave*",
+"oh hi 🦫"
+],
+"goalDone": [
+"GOAL DONE 🎉 {n} of focus. very chill of you 🦫",
+"daily goal. nice. 🏆",
+"you did it. all is well 💗"
+],
+"streak": [
+"{n} day streak 🔥 nice",
+"day {n}. we vibin",
+"{n} days in a row. love it 🦫"
+],
+"timerStart": [
+"{n} min. let's chill and focus 📖🦫",
+"okay. {n} minutes. no rush.",
+"{n} min focus 🌿 I'll sit here"
+],
+"timerDone": [
+"DONE. {n} minutes 🎉 nice",
+"{n} min. well done 🦫💗",
+"you did {n} minutes. all is well ✨"
+],
+"breakStart": [
+"break time 🧋 nice",
+"boba break. perfect 🦫",
+"rest. you earned it 🌿"
+],
+"breakOver": [
+"break's over 🦫 back to it",
+"okay. let's go again 🌿",
+"ready when you are ✨"
+],
+"levelUp": [
+"LEVEL {n}. nice 🦫🎉",
+"level {n}. we vibin",
+"level {n}. love that 🌿"
+],
+"newCollar": [
+"oh, a {item} 🦫✨",
+"a {item}. nice.",
+"new {item}. I like it 🌿"
+]
+}
+}

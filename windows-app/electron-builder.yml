@@ -1,0 +1,36 @@
+# Builds CariberrySetup.exe, a one-click installer for Windows 10 and 11 (64-bit). Run `npm run dist`.
+appId: com.cariberry.app
+productName: Cariberry
+copyright: Copyright © Ranveer Sanghvi
+directories:
+  buildResources: build
+  output: dist
+asar: true
+asarUnpack:
+  - node_modules/koffi/build/**
+files:
+  - package.json
+  - src/**/*
+  - assets/**/*
+  - "!**/*.{md,markdown,map}"
+  - "!node_modules/koffi/{src,doc,vendor,lib}/**"
+  - "!node_modules/koffi/build/koffi/{darwin_*,linux_*,freebsd_*,openbsd_*,musl_*}/**"       # keep all three win32 builds: the one for the PC's CPU is picked at run time
+afterPack: scripts/after-pack.cjs
+win:
+  target:
+    - nsis                       # the CPU (x64, arm64, ia32) comes from the command line: scripts/build.mjs builds each on its own
+  icon: build/icon.ico
+  signAndEditExecutable: false       # the exe's icon and details are set by scripts/after-pack.cjs, so no Wine is needed
+  artifactName: CariberrySetup.exe
+nsis:
+  include: build/installer.nsh      # refuses to install on anything older than Windows 10
+  oneClick: true                     # double-click, done: no questions
+  perMachine: false                  # installs for you only, so no administrator prompt
+  allowElevation: false
+  createDesktopShortcut: false
+  createStartMenuShortcut: true
+  shortcutName: Cariberry
+  runAfterFinish: true
+  deleteAppDataOnUninstall: false    # her save and settings survive a reinstall
+  uninstallDisplayName: Cariberry
+  artifactName: CariberrySetup.exe

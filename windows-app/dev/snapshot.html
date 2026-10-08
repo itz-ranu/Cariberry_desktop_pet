@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>UI snapshot</title>
+<!-- Dev only. Renders the harness pages in frames and keeps their markup, so a change to the UI engine can be checked against
+     what the old one drew:  ?mode=save  (remember), then  ?mode=compare  (diff against what was remembered). -->
+<body><pre id="out">working…</pre>
+<script type="module">
+const mode = new URLSearchParams(location.search).get('mode') || 'save'
+const pages = [
+  'page=panel&tab=home&seed=1', 'page=panel&tab=focus&seed=1', 'page=panel&tab=closet&seed=1', 'page=panel&tab=settings&seed=1',
+  'page=panel&tab=home&fresh=1', 'page=stats&seed=stats', 'page=stats&seed=stats&theme=boba',
+  'page=cards&kind=mood', 'page=cards&kind=note', 'page=cards&kind=chat', 'page=cards&kind=toast', 'page=cards&kind=story', 'page=cards&kind=story&seed=stats',
+]
+// attributes in a fixed order, so only a real difference shows
+const canon = (n) => !n ? '(missing)' : n.nodeType === 3 ? n.data : n.nodeType !== 1 ? '' :
+  `<${n.tagName.toLowerCase()}${[...n.attributes].map((a) => [a.name, a.value]).sort().map(([k, v]) => ` ${k}="${v}"`).join('')}>${[...n.childNodes].map(canon).join('')}</${n.tagName.toLowerCase()}>`
+const grab = (url) => new Promise((resolve) => {
+  const f = document.createElement('iframe'); f.style.cssText = 'width:900px;height:900px;border:0'; document.body.append(f)
+  f.src = `./harness.html?${url}`
+  const t0 = Date.now()
+  const poll = setInterval(() => {
+    const d = f.contentDocument
+    if ((d?.body?.dataset.ready === '1' && d.getElementById('app')?.innerHTML.length > 50) || Date.now() - t0 > 9000) {
+      clearInterval(poll)
+      setTimeout(() => {
+        const html = canon(f.contentDocument.getElementById('app'))
+        const errs = f.contentWindow.__errs || []
+        f.remove(); resolve({ url, html, errs })
+      }, 800)
+    }
+  }, 150)
+})
+const results = []
+for (const p of pages) results.push(await grab(p))
+const out = document.getElementById('out')
+if (mode === 'save') {
+  localStorage.setItem('snap', JSON.stringify(results))
+  out.textContent = 'saved ' + results.map((r) => `${r.url}: ${r.html.length}`).join('\n')
+} else {
+  const old = JSON.parse(localStorage.getItem('snap') || '[]')
+  const lines = results.map((r, i) => {
+    const o = old[i]
+    if (!o) return `NEW   ${r.url}`
+    if (o.html === r.html) return `SAME  ${r.url}  (${r.html.length} chars)`
+    let k = 0; while (k < r.html.length && r.html[k] === o.html[k]) k++
+    return `DIFF  ${r.url}\n   old …${o.html.slice(Math.max(0, k - 60), k + 100)}\n   new …${r.html.slice(Math.max(0, k - 60), k + 100)}`
+  })
+  out.textContent = lines.join('\n')
+}
+window.__snap = results.map((r) => ({ url: r.url, n: r.html.length }))
+</script></body></html>

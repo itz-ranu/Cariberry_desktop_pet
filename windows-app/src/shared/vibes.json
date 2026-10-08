@@ -1,0 +1,106 @@
+{
+"gentle": {
+"scold": [
+"bestie… maybe a quick break from {x}? let's finish that study goal 🥺🌸",
+"hey you 🌷 {x} is calling, but your goals are louder. shall we go back?",
+"no pressure, but {x} might not be helping right now 💗",
+"gentle nudge: close {x} and take one deep breath? you've got this 🌿",
+"I believe in you, truly. {x} can wait 🤍"
+],
+"scoldHard": [
+"okay love, I'm a little worried now… can we close {x} together? 🥺",
+"you're stronger than {x}. one tab. just close it 💗",
+"I'll sit right here until we're back on track 🌸"
+],
+"tapClose": [
+"I'll close it for you, sweetie 🌷",
+"let me help, just this once 🌸",
+"there, a fresh start 💗"
+],
+"closedTab": [
+"all closed 🌷 deep breath. you're doing great",
+"gone! no judgment 🤍",
+"ready when you are, bestie 🌸"
+],
+"backToWork": [
+"oh, I'm so proud of you 🥹🌸",
+"there you are 💗 welcome back",
+"that took courage. thank you 🌷"
+],
+"praise": [
+"you're doing beautifully 🌸",
+"I'm right here with you 🤍",
+"slow and steady, bestie 🌿",
+"so proud of you 💗"
+]
+},
+"sassy": {
+"scold": [
+"not another 30 minutes on {x} 💅… your essay isn't gonna write itself!",
+"{x} again?? babe. no. 😒",
+"I'm not mad, I'm just disappointed. and slightly mad. close {x} 💅",
+"bestie, {x} is not a personality. back to work ✨",
+"the way you opened {x} like I wouldn't notice 👀"
+],
+"scoldHard": [
+"I will start a group chat about this 😤 close {x}.",
+"this is an intervention. {x}. closed. now. 💅",
+"you have exactly zero excuses left 🙄 close {x}"
+],
+"tapClose": [
+"allow me 💅",
+"I'll do it myself, as per usual",
+"watch and learn 😼"
+],
+"closedTab": [
+"closed. you're welcome 💅",
+"gone. I'm that girl 😼",
+"next time, listen the first time ✨"
+],
+"backToWork": [
+"thank you. that wasn't so hard 💅",
+"oh we're productive now? iconic 💗",
+"knew you had it in you ✨"
+],
+"praise": [
+"look at you being productive 💅",
+"slay the study session ✨",
+"okay main character energy 💗",
+"I'm obsessed with this focus 😭"
+]
+},
+"drill": {
+"scold": [
+"BARK! 🐶 {x} again?! Eyes UP!",
+"BARK! No treats until focus time is done!",
+"Drop {x}. Right now. MOVE MOVE MOVE 😤",
+"That's not in the plan, soldier! Close {x}! 🫡",
+"BARK BARK! Focus is NOT optional!"
+],
+"scoldHard": [
+"BARK BARK BARK!!! CLOSE IT NOW!!! 😡",
+"I'm not asking again. {x}. GONE. 🚫",
+"DROP AND GIVE ME 25 MINUTES OF FOCUS! 🫡"
+],
+"tapClose": [
+"I'm closing it MYSELF! 🫡",
+"STAND BACK! 🐾",
+"executing close order 🫡"
+],
+"closedTab": [
+"TARGET ELIMINATED 🫡",
+"tab down. back to work, soldier!",
+"GONE. now move! 💪"
+],
+"backToWork": [
+"good soldier! keep that pace 🫡",
+"THAT'S what I like to see! 💪",
+"at ease. now keep going"
+],
+"praise": [
+"steady pace, soldier! 🫡",
+"discipline looks good on you 💪",
+"keep it up! no slacking!"
+]
+}
+}

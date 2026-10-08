@@ -1,0 +1,113 @@
+/* The control panel, 372 x 660. The window is a little bigger than the panel so its shadow has room.
+   Calm on purpose: flat white cards, one accent used only for the main action and the current tab,
+   text never smaller than 11px, and as few boxes as possible. */
+html, body { width: 100%; height: 100%; }
+body { padding: 16px; }
+#app { width: 372px; height: 660px; }
+
+.panel { position: relative; width: 372px; height: 660px; border-radius: 24px; display: flex; flex-direction: column;
+  box-shadow: 0 14px 34px rgba(56, 32, 84, .28), 0 2px 8px rgba(56, 32, 84, .16), inset 0 0 0 1px rgba(255, 255, 255, .6); }
+
+/* ---- header */
+.hdr { padding: 16px 16px 8px; display: flex; flex-direction: column; gap: 10px; }
+.avatar { position: relative; width: 56px; height: 56px; border-radius: 50%; flex: none; background: var(--glass-70); }
+.avatar::after { content: ''; position: absolute; inset: 0; border-radius: 50%; box-shadow: inset 0 0 0 2px var(--glass-90); pointer-events: none; }
+.avatar canvas { border-radius: 50%; }
+.hdr .name { font-size: 20px; font-weight: 900; line-height: 1.15; }
+.hdr .sub { font-size: 12px; font-weight: 700; color: var(--ink-soft); }
+.hdr .stats { display: flex; gap: 12px; font-size: 12px; font-weight: 800; }
+.hdr .stats span { white-space: nowrap; }
+.hdr .xp { height: 4px; }
+
+/* ---- body */
+.content { padding: 4px 14px 14px; display: flex; flex-direction: column; gap: 12px; }
+.scroller { flex: 1; min-height: 0; }
+
+.panel .card { border: 1px solid color-mix(in srgb, var(--ink) 7%, transparent); border-radius: 18px; padding: 14px; background: var(--card);
+  box-shadow: 0 1px 2px color-mix(in srgb, var(--ink) 5%, transparent); }
+.panel .label { font-size: 12px; text-transform: none; letter-spacing: 0; font-weight: 800; }
+.panel .note { font-size: 12px; font-weight: 600; line-height: 1.35; }
+.panel .section { display: flex; flex-direction: column; gap: 8px; }
+.panel .section > .label { padding: 0 4px; }
+.panel .more { font-size: 12px; font-weight: 800; color: var(--ink-soft); padding: 2px 4px; }
+.panel .more .icon { transition: transform .2s; }
+.panel .more.open .icon { transform: rotate(90deg); }
+
+/* ---- tab bar */
+.tabbar { display: flex; gap: 2px; padding: 6px 10px 10px; }
+.tabbar button { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 3px; padding: 7px 0 6px; border-radius: 14px; color: var(--ink-soft);
+  font-size: 11px; font-weight: 800; transition: background .2s, color .2s; }
+.tabbar button.on { color: #fff; background: var(--hot); }
+
+/* ---- big button */
+.cta { width: 100%; padding: 13px; border-radius: 16px; font-size: 14px; font-weight: 900; box-shadow: 0 4px 10px var(--hot-shadow); }
+
+/* ---- care */
+.care { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+.care button { display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 11px 0 9px; border-radius: 16px;
+  background: color-mix(in srgb, var(--t) 40%, transparent); }
+.care button.on { background: color-mix(in srgb, var(--t) 85%, transparent); box-shadow: inset 0 0 0 2px color-mix(in srgb, var(--ink) 30%, transparent); }
+.care .e { font-size: 24px; line-height: 1.1; }
+.care .l { font-size: 12px; font-weight: 800; }
+
+/* ---- mood */
+.moods { display: flex; gap: 6px; }
+.moods button { flex: 1; height: 42px; border-radius: 14px; font-size: 22px; background: var(--track); border: 2px solid transparent; display: grid; place-items: center; transition: background .15s, border-color .15s; }
+.moods button.on { background: color-mix(in srgb, var(--accent) 30%, transparent); border-color: var(--accent); }
+
+/* ---- vitals */
+.vitals { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+.vitals .v { display: flex; flex-direction: column; gap: 5px; align-items: center; font-size: 11px; font-weight: 800; color: var(--ink-soft); }
+.vitals .v .e { font-size: 16px; line-height: 1; }
+
+/* ---- generic tiles (stations, accessories, shop, species) */
+.tile { border-radius: 14px; padding: 9px 2px; display: flex; flex-direction: column; align-items: center; gap: 3px; }
+.tile .nm { font-size: 11px; font-weight: 800; max-width: 100%; }
+.tile .price { font-size: 11px; font-weight: 800; padding: 1px 7px; border-radius: 99px; background: var(--track); color: var(--ink-soft); }
+.tile .price.afford { background: color-mix(in srgb, var(--sage) 70%, transparent); color: var(--ink); }
+
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chipbtn { font-size: 12px; font-weight: 800; padding: 7px 12px; border-radius: 99px; background: var(--track); border: 2px solid transparent; white-space: nowrap; transition: background .15s, border-color .15s; }
+.chipbtn.on { background: color-mix(in srgb, var(--accent) 30%, transparent); border-color: var(--accent); }
+
+.species { position: relative; border-radius: 14px; padding-top: 3px; padding-bottom: 7px; display: flex; flex-direction: column; align-items: center; }
+.species .nm { font-size: 11px; font-weight: 800; }
+.species .tick { position: absolute; top: 3px; right: 3px; width: 15px; height: 15px; border-radius: 50%; background: var(--accent); color: #fff; display: grid; place-items: center; box-shadow: 0 0 0 2px #fff; }
+.swatch { width: 36px; height: 36px; border-radius: 50%; padding: 3px; border: 2.4px solid transparent; flex: none; }
+.swatch.on { border-color: var(--accent); }
+.swatch i { display: block; width: 100%; height: 100%; border-radius: 50%; box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--ink) 12%, transparent); }
+
+.welcome { padding: 14px; border-radius: 18px; background: var(--hot); color: #fff; }
+.shopmsg { text-align: center; padding: 8px; border-radius: 12px; background: color-mix(in srgb, var(--butter) 40%, transparent); font-size: 12px; font-weight: 800; }
+
+/* ---- segmented control for the Closet pages */
+.pages { display: flex; padding: 3px; border-radius: 99px; background: var(--track); gap: 2px; }
+.pages button { flex: 1; text-align: center; padding: 8px 0; border-radius: 99px; font-size: 12.5px; font-weight: 800; color: var(--ink-soft); transition: background .2s, color .2s; }
+.pages button.on { color: var(--ink); background: var(--glass-90); box-shadow: 0 1px 3px rgba(0,0,0,.14); }
+
+/* ---- settings */
+.themes { display: flex; justify-content: space-between; }
+.themedot { position: relative; width: 38px; height: 38px; border-radius: 50%; padding: 3px; border: 2.4px solid transparent; flex: none; }
+.themedot.on { border-color: color-mix(in srgb, var(--ink) 60%, transparent); }
+.themedot i { display: grid; place-items: center; width: 100%; height: 100%; border-radius: 50%; font-style: normal; font-size: 14px; box-shadow: inset 0 0 0 2px var(--glass-90); }
+
+.row { display: flex; align-items: center; gap: 10px; min-height: 32px; }
+.row + .row { margin-top: 12px; }
+.row .t { font-size: 13px; font-weight: 800; }
+.guards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 6px; }
+.guards button { display: flex; align-items: center; gap: 7px; padding: 8px 10px; border-radius: 12px; background: var(--track); border: 2px solid transparent; font-size: 12px; font-weight: 800; text-align: left; min-width: 0; transition: background .15s, border-color .15s; }
+.guards button.on { background: color-mix(in srgb, var(--accent) 30%, transparent); border-color: var(--accent); }
+.guards .e { font-size: 16px; flex: none; }
+
+.stepper { display: flex; align-items: center; gap: 6px; }
+.stepper button { width: 24px; height: 24px; border-radius: 8px; background: var(--glass-70); display: grid; place-items: center; box-shadow: 0 1px 2px rgba(0,0,0,.12); }
+
+.task { display: flex; align-items: center; gap: 10px; }
+.task .t { font-size: 13px; font-weight: 700; }
+.task.done .t { color: var(--ink-soft); text-decoration: line-through; }
+
+.linkbtn { display: flex; align-items: center; justify-content: center; gap: 8px; padding: 11px; border-radius: 14px; background: var(--glass-70); font-size: 13px; font-weight: 800; width: 100%; }
+.quit { color: var(--alert); }
+
+.hscroll { display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; }
+.hscroll::-webkit-scrollbar { display: none; }

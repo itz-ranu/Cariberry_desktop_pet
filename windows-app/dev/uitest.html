@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>UI engine test</title>
+<!-- Dev only. Opens in a normal browser: node dev/serve.mjs, then http://localhost:8123/dev/uitest.html
+     Runs scenarios through the engine in src/renderer/ui/mini.js and checks the DOM, the hooks and the events. -->
+<body><pre id="out">running…</pre><div id="a"></div><div id="b"></div>
+<script type="module">
+import * as ui from '../src/renderer/ui/mini.js'
+const { html, render, useState, useEffect, useRef, useMemo, useCallback } = ui
+const out = document.getElementById('out')
+const results = []
+const test = async (name, fn) => {
+  const host = document.createElement('div'); document.body.append(host)
+  try { await fn(host); results.push(['PASS', name]) } catch (e) { results.push(['FAIL', name + ' :: ' + (e.stack || e.message)]) }
+  host.remove()
+}
+const eq = (a, b, msg = '') => { if (JSON.stringify(a) !== JSON.stringify(b)) throw new Error(`${msg} expected ${JSON.stringify(b)} got ${JSON.stringify(a)}`) }
+const tick = () => new Promise((r) => setTimeout(r, 5))
+
+await test('static markup, attributes, text trimming, self-closing', (host) => {
+  render(html`
+    <div class="card big" id="x" data-n=${5} aria-hidden="true">
+      Hello ${'world'}
+      <br />
+      <input type="text" disabled />
+      <${({ children }) => html`<b>${children}</b>`}>inside<//>
+    </div>`, host)
+  eq(host.innerHTML, '<div class="card big" id="x" data-n="5" aria-hidden="true">Hello world<br><input type="text" disabled=""><b>inside</b></div>')
+})
+
+await test('multiple roots, null/false/true children, numbers', (host) => {
+  render(html`<span>a</span><span>${null}${false}${true}${0}${undefined}${'z'}</span>`, host)
+  eq(host.innerHTML, '<span>a</span><span>0z</span>')
+})
+
+await test('style object, numbers, custom properties, string style', (host) => {
+  render(html`<i style=${{ opacity: 0.5, width: 10, '--tint': 'red', fontWeight: 700, background: 'blue' }} /><u style="color:red" />`, host)
+  const i = host.firstChild
+  eq([i.style.opacity, i.style.width, i.style.getPropertyValue('--tint'), i.style.fontWeight, i.style.background], ['0.5', '10px', 'red', '700', 'blue'])
+  eq(host.lastChild.style.color, 'red')
+  render(html`<i style=${{ width: 20 }} /><u style=${{ color: 'blue' }} />`, host)
+  eq([host.firstChild.style.opacity, host.firstChild.style.width, host.firstChild.style.getPropertyValue('--tint')], ['', '20px', ''])
+  eq(host.lastChild.style.color, 'blue')
+})
+
+await test('events: latest handler wins, removed handler stops firing, keys', (host) => {
+  const log = []
+  const view = (n) => html`<button onClick=${n ? () => log.push('b' + n) : null} onKeyDown=${(e) => log.push(e.key)}>x</button>`
+  render(view(1), host); const btn = host.firstChild
+  btn.click(); render(view(2), host); btn.click(); render(view(0), host); btn.click()
+  btn.dispatchEvent(new KeyboardEvent('keydown', { key: 'q' }))
+  eq(log, ['b1', 'b2', 'q']); eq(host.firstChild === btn, true)
+})
+
+await test('keyed lists reorder without rebuilding nodes; unkeyed patch in place', (host) => {
+  const list = (ids) => html`<ul>${ids.map((i) => html`<li key=${i}>${i}</li>`)}</ul>`
+  render(list([1, 2, 3, 4]), host)
+  const nodes = Object.fromEntries([...host.querySelectorAll('li')].map((li) => [li.textContent, li]))
+  render(list([4, 2, 5, 1]), host)
+  eq([...host.querySelectorAll('li')].map((li) => li.textContent), ['4', '2', '5', '1'])
+  eq([host.children[0].children[0] === nodes[4], host.children[0].children[1] === nodes[2], host.children[0].children[3] === nodes[1]], [true, true, true])
+  eq(nodes[3].isConnected, false)
+  render(list([]), host); eq(host.innerHTML, '<ul></ul>')
+})
+
+await test('a component that comes and goes keeps siblings in order', async (host) => {
+  let flip
+  const Maybe = () => html`<em>maybe</em>`
+  const App = () => { const [on, set] = useState(false); flip = () => set((v) => !v); return html`<p>top</p>${on && html`<${Maybe} />`}<p>bottom</p>` }
+  render(html`<${App} />`, host)
+  eq(host.innerHTML, '<p>top</p><p>bottom</p>')
+  flip(); await tick(); eq(host.innerHTML, '<p>top</p><em>maybe</em><p>bottom</p>')
+  flip(); await tick(); eq(host.innerHTML, '<p>top</p><p>bottom</p>')
+})
+
+await test('component returning nothing, then something, then an array', async (host) => {
+  let set
+  const C = () => { const [n, s] = useState(0); set = s; return n === 0 ? null : n === 1 ? html`<a>1</a>` : [html`<a>2</a>`, html`<a>3</a>`] }
+  render(html`<b>[</b><${C} /><b>]</b>`, host)
+  eq(host.innerHTML, '<b>[</b><b>]</b>')
+  set(1); await tick(); eq(host.innerHTML, '<b>[</b><a>1</a><b>]</b>')
+  set(2); await tick(); eq(host.innerHTML, '<b>[</b><a>2</a><a>3</a><b>]</b>')
+  set(0); await tick(); eq(host.innerHTML, '<b>[</b><b>]</b>')
+})
+
+await test('state survives a parent redraw; unmount runs cleanups; effects run after mount, in order', async (host) => {
+  const log = []
+  let bump, hide
+  const Kid = ({ label }) => {
+    const [n, setN] = useState(0)
+    bump = () => setN((v) => v + 1)
+    useEffect(() => { log.push(`on ${label}`); return () => log.push(`off ${label}`) }, [label])
+    useEffect(() => { log.push('every'); }, undefined)
+    return html`<s>${label}:${n}</s>`
+  }
+  const App = () => { const [show, setShow] = useState(true); const [label, setLabel] = useState('a'); hide = () => setShow(false); window.relabel = setLabel; return show ? html`<${Kid} label=${label} />` : html`<i />` }
+  render(html`<${App} />`, host)
+  eq(log, ['on a', 'every']); eq(host.innerHTML, '<s>a:0</s>')
+  bump(); await tick(); eq(host.innerHTML, '<s>a:1</s>'); eq(log, ['on a', 'every', 'every'])
+  window.relabel('b'); await tick(); eq(host.innerHTML, '<s>b:1</s>'); eq(log.slice(3), ['off a', 'on b', 'every'])
+  hide(); await tick(); eq(host.innerHTML, '<i></i>'); eq(log.slice(-1), ['off b'])
+})
+
+await test('batched updates redraw once; parent and child both dirty draw child once', async (host) => {
+  let draws = 0, upParent, upKid
+  const Kid = () => { draws++; const [n, s] = useState(0); upKid = s; return html`<b>${n}</b>` }
+  const App = () => { const [n, s] = useState(0); upParent = s; return html`<i>${n}</i><${Kid} />` }
+  render(html`<${App} />`, host); draws = 0
+  upKid(1); upParent(1); upKid(2); upParent(2); await tick()
+  eq(draws, 1); eq(host.innerHTML, '<i>2</i><b>2</b>')
+})
+
+await test('refs: object and function, set on mount and cleared on unmount', async (host) => {
+  const r = { current: null }; const seen = []
+  render(html`<a ref=${r} /><b ref=${(el) => seen.push(el && el.tagName)} />`, host)
+  eq(r.current.tagName, 'A'); render(null, host); eq(r.current, null); eq(seen, ['B', null])
+})
+
+await test('useRef, useMemo, useCallback keep identity as documented', async (host) => {
+  const log = []; let bump
+  const C = ({ k }) => {
+    const [, set] = useState(0); bump = () => set((v) => v + 1)
+    const ref = useRef(0); ref.current++
+    const memo = useMemo(() => ({ k }), [k])
+    const cb = useCallback(() => k, [k])
+    log.push([ref.current, memo, cb]); return html`<i />`
+  }
+  render(html`<${C} k=${1} />`, host); bump(); await tick(); render(html`<${C} k=${2} />`, host)
+  eq(log.map((x) => x[0]), [1, 2, 3]); eq(log[0][1] === log[1][1], true); eq(log[1][1] === log[2][1], false); eq(log[0][2] === log[1][2], true)
+})
+
+await test('svg: namespace, dangerouslySetInnerHTML, width/height attributes', (host) => {
+  render(html`<svg class="icon" width=${16} height=${16} viewBox="0 0 24 24" dangerouslySetInnerHTML=${{ __html: '<path d="M1 1" />' }} /><svg><defs><linearGradient id="g"><stop offset="0" /></linearGradient></defs></svg>`, host)
+  const s = host.firstChild
+  eq([s.namespaceURI, s.getAttribute('width'), s.getAttribute('viewBox'), s.firstChild.namespaceURI, s.firstChild.tagName], ['http://www.w3.org/2000/svg', '16', '0 0 24 24', 'http://www.w3.org/2000/svg', 'path'])
+  eq(host.lastChild.firstChild.firstChild.namespaceURI, 'http://www.w3.org/2000/svg')
+  render(html`<svg class="icon" width=${16} height=${16} viewBox="0 0 24 24" dangerouslySetInnerHTML=${{ __html: '<path d="M1 1" />' }} />`, host)
+  eq(host.children.length, 1)
+})
+
+await test('aria booleans, disabled, value/checked as controlled properties', (host) => {
+  render(html`<button aria-checked=${false} aria-expanded=${true} disabled=${false} title=${undefined}>x</button><input value=${'hi'} /><input type="checkbox" checked=${true} />`, host)
+  const [b, i, c] = host.children
+  eq([b.getAttribute('aria-checked'), b.getAttribute('aria-expanded'), b.disabled, i.value, c.checked], ['false', 'true', false, 'hi', true])
+  i.value = 'typed'; render(html`<button disabled=${true}>x</button><input value=${'hi'} /><input type="checkbox" checked=${false} />`, host)
+  eq([host.children[0].disabled, host.children[1].value, host.children[2].checked], [true, 'hi', false])
+})
+
+await test('select: value is applied after its options exist', (host) => {
+  render(html`<select value=${'b'}><option value="a">A</option><option value="b">B</option></select>`, host)
+  eq(host.firstChild.value, 'b')
+})
+
+await test('a different tag or component swaps the node; class text concatenation', (host) => {
+  render(html`<div class="a ${'b'} ${''}">x</div>`, host); const d = host.firstChild
+  eq(d.getAttribute('class'), 'a b ')
+  render(html`<span>x</span>`, host); eq(host.innerHTML, '<span>x</span>'); eq(d.isConnected, false)
+})
+
+await test('spread props and conditional child slots keep component state', async (host) => {
+  let up
+  const Counter = (p) => { const [n, s] = useState(0); up = s; return html`<u>${p.label}${n}</u>` }
+  const App = ({ show, ...rest }) => html`${show && html`<h1>t</h1>`}<${Counter} ...${rest} />`
+  render(html`<${App} show=${false} label="L" />`, host); up(5); await tick()
+  render(html`<${App} show=${true} label="M" />`, host)
+  eq(host.innerHTML, '<h1>t</h1><u>M5</u>')
+})
+
+await test('a 300-row keyed list reshuffled 50 times matches a fresh render', (host) => {
+  const rows = (ids) => html`<ol>${ids.map((i) => html`<li key=${i} class=${i % 2 ? 'o' : 'e'}>${i}</li>`)}</ol>`
+  let ids = Array.from({ length: 300 }, (_, i) => i)
+  render(rows(ids), host)
+  let seed = 7; const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647
+  for (let n = 0; n < 50; n++) {
+    ids = ids.filter(() => rnd() > 0.1).concat(Array.from({ length: Math.floor(rnd() * 20) }, () => 1000 + Math.floor(rnd() * 100000)))
+    ids = [...new Set(ids)].sort(() => rnd() - 0.5)
+    render(rows(ids), host)
+    const fresh = document.createElement('div'); render(rows(ids), fresh)
+    if (fresh.innerHTML !== host.innerHTML) throw new Error('mismatch on round ' + n)
+  }
+})
+
+out.textContent = results.map((r) => r.join('  ')).join('\n') + `\n\n${results.filter((r) => r[0] === 'FAIL').length} failed of ${results.length}`
+window.__done = results
+</script></body></html>

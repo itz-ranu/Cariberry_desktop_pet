@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Cariberry</title>
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; media-src 'self' blob:; connect-src 'self'">
+<link rel="stylesheet" href="ui/ui.css">
+<style>
+  html, body { width: 270px; height: 236px; }
+  #stage { position: absolute; left: 0; top: 0; width: 270px; height: 236px; }
+  #bubbleZone { position: absolute; left: 0; top: 0; width: 270px; display: flex; align-items: flex-end; justify-content: center; pointer-events: none; }
+  #bubble { display: none; flex-direction: column; align-items: center; padding: 0 16px; transform-origin: bottom center; animation: pop .32s var(--spring); }
+  #bubble .box { font-size: 13px; font-weight: 800; line-height: 1.25; color: var(--ink); text-align: center; max-width: 224px; padding: 10px 15px; border-radius: 20px;
+    background: linear-gradient(#fff, var(--bg)); border: 2.4px solid var(--bubble-accent, var(--accent));
+    box-shadow: 0 4px 9px color-mix(in srgb, var(--bubble-accent, var(--accent)) 45%, transparent); overflow-wrap: anywhere; }
+  #bubble svg { display: block; margin-top: -1.5px; transform: translateX(6px); overflow: visible; }
+  #bubble svg path { fill: var(--bg); stroke: var(--bubble-accent, var(--accent)); stroke-width: 2.4; stroke-linejoin: round; }
+  @keyframes pop { from { transform: scale(.6); opacity: 0 } to { transform: scale(1); opacity: 1 } }
+  #close { position: absolute; width: 30px; height: 30px; margin: -15px 0 0 -15px; display: none; pointer-events: none; transform: scale(1); transition: transform .18s var(--spring); }
+  #close .ring { position: absolute; inset: 0; border-radius: 50%; border: 2.5px solid #fff; opacity: .9; transform: scale(1.12); transition: transform .45s ease-out, opacity .45s ease-out; }
+  #close .dot { position: absolute; inset: 0; border-radius: 50%; border: 2px solid rgba(255,255,255,.85); background: radial-gradient(circle at 35% 30%, #ff858f, #e63857 90%);
+    box-shadow: 0 2px 5px rgba(230,50,80,.5); display: grid; place-items: center; color: #fff; font-size: 13px; font-weight: 900; }
+  #close.pressed { transform: scale(.76); } #close.pressed .ring { transform: scale(2.3); opacity: 0; }
+  @media (prefers-reduced-motion: reduce) { #bubble { animation: none; } }
+</style></head>
+<body>
+<canvas id="stage"></canvas>
+<div id="bubbleZone"><div id="bubble"><div class="box" id="bubbleText"></div><svg width="16" height="10" viewBox="0 0 16 10"><path d="M0 0 L16 0 L8 10 Z"/></svg></div></div>
+<div id="close"><div class="ring"></div><div class="dot">✕</div></div>
+<script type="module" src="pet.js"></script>
+</body></html>

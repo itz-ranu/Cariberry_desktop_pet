@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Icon sheet</title>
+<!-- Dev only: every icon, large and at panel size, outlined and filled.  http://localhost:8123/dev/icons.html -->
+<style>body{font:12px system-ui;background:#fff;color:#573d5c;margin:16px}.g{display:grid;grid-template-columns:repeat(auto-fill,96px);gap:10px}
+.c{text-align:center}.icon{stroke:currentColor;fill:none;stroke-linecap:round;stroke-linejoin:round}.icon.filled{fill:currentColor}.row{display:flex;gap:6px;justify-content:center;align-items:center;margin-top:4px}</style>
+<div class="g" id="g"></div>
+<script type="module">
+import { ICONS } from '../src/renderer/ui/icons.js'
+const svg = (n, size, cls = '') => `<svg class="icon ${cls}" width="${size}" height="${size}" viewBox="0 0 24 24" stroke-width="2">${ICONS[n]}</svg>`
+g.innerHTML = Object.keys(ICONS).map((n) => `<div class="c">${svg(n, 56)}<div class="row">${svg(n, 16)}${svg(n, 16, 'filled')}${svg(n, 20)}</div><div>${n}</div></div>`).join('')
+</script>

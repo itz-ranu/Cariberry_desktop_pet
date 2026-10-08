@@ -1,0 +1,26 @@
+{
+  "name": "cariberry",
+  "productName": "Cariberry",
+  "version": "1.0.0",
+  "description": "Cariberry: a soft, minimal desktop pet who keeps you focused while you study.",
+  "author": "Ranveer Sanghvi",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "main": "src/main/main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "node --test \"test/**/*.test.js\"",
+    "icons": "electron scripts/make-icons.cjs",
+    "e2e": "node scripts/e2e.mjs",
+    "dist": "node scripts/build.mjs"
+  },
+  "dependencies": {
+    "koffi": "2.16.3"
+  },
+  "devDependencies": {
+    "electron": "44.5.1",
+    "electron-builder": "26.15.3",
+    "resedit": "3.1.0"
+  }
+}

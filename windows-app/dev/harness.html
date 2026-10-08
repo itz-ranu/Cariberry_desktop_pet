@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Cariberry UI harness</title>
+<!-- Dev only. Runs the real engine in a normal browser tab behind a stand-in for the Electron bridge, so the
+     panel, stats window and cards can be looked at without launching the app:
+       node dev/serve.mjs   then   http://localhost:8123/dev/harness.html?page=panel&tab=home&seed=1
+     page = panel | stats | cards (kind=mood|note|chat|toast|story)   theme = coquette|y2k|cottagecore|darkAcademia|boba|cyberPastel -->
+<style>html,body{margin:0}body{background:#cfcfd4}</style>
+<div id="app"></div>
+<script type="module">
+const q = new URLSearchParams(location.search)
+const page = q.get('page') || 'panel'
+const listeners = {}
+const log = (window.__log = [])
+const stash = JSON.parse(localStorage.getItem('cari-dev') || '{}')
+let rt = null
+window.cari = {
+  platform: 'dev',
+  invoke: async (ch, ...a) => {
+    log.push([ch, ...a])
+    switch (ch) {
+      case 'load': return { save: q.get('fresh') ? {} : (stash.save || {}), prefs: { theme: q.get('theme') || 'coquette', welcomed: true, ...(stash.prefs || {}) }, rules: null }
+      case 'screens': return { primaryH: 900, displays: [{ work: { x: 0, y: 0, width: 1440, height: 860 }, bounds: { x: 0, y: 0, width: 1440, height: 900 }, scale: 1 }] }
+      case 'rpc': return rt.handlers[a[0]]?.(...a.slice(1))
+      case 'secret:has': return false
+      case 'theme:get': return q.get('theme') || 'coquette'
+      case 'toast:ready': return { emoji: '🍵', title: 'First sip', detail: 'Finish your first focus session' }
+      case 'chat:open': return { name: 'Cariberry', species: 'cat', coat: 0, outfit: {}, emotion: 'happy', brain: false, thinking: false, status: '', messages: [
+        { role: 'pet', text: 'hi bestie, I\'m Cariberry 🐾 ask me anything, or say “focus 25”' }, { role: 'user', text: 'can you explain photosynthesis like I\'m five' },
+        { role: 'pet', text: 'plants eat sunlight like snacks 🌞 they mix it with water and air to make their own food, and breathe out the oxygen we need 🌿' },
+        { role: 'user', text: 'focus 25' }, { role: 'pet', text: '25 min. I\'ll supervise. 📖' }] }
+      case 'chat:history': return stash.chat || []
+      default: return true
+    }
+  },
+  send: (ch, ...a) => { log.push([ch, ...a]) },
+  on: (ch, cb) => { (listeners[ch] ||= []).push(cb); return () => {} },
+}
+window.__emit = (ch, ...a) => (listeners[ch] || []).forEach((f) => f(...a))
+
+const { boot } = await import('../src/renderer/runtime.js')
+rt = await boot({ cari: window.cari }); window.__rt = rt
+const { pet, prefs } = rt
+
+// the Mac render helper's sample pet (RenderSheet.swift), so screenshots line up with the Swift ones
+if (q.get('seed')) {
+  const today = new Date(); const day = (n) => { const d = new Date(today); d.setDate(d.getDate() - n); return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}` }
+  pet.name = 'Cariberry'; pet.xp = q.get('seed') === 'stats' ? 1180 : 640; pet.berries = 118; pet.totalFocusMinutes = 187
+  pet.currentActivity = 'Xcode'; pet.lastVerdict = 'work'
+  pet.tasks = [{ id: 'a', title: 'Finish chem notes', done: false }, { id: 'b', title: 'Reply to Maya', done: true }, { id: 'c', title: 'Read ch. 4', done: false }]
+  pet.dailyFocus[day(0)] = 38; for (let d = 1; d <= 3; d++) pet.dailyFocus[day(d)] = 30
+  pet.intention = 'Chem notes'
+  pet.outfit = { head: 'beret', face: 'heartGlasses', neck: 'pearls', hair: 'bow', body: 'knitSweater', aura: 'auraHearts', rug: 'rugCoquette', held: 'none' }
+  pet.owned = new Set(['rugCottage', 'decor.plant']); pet.decorOn = new Set(['plant'])
+  prefs.setTodayMood('cozy')
+  if (q.get('seed') === 'stats') {
+    pet.treatsEaten = 14; pet.barksGiven = 6
+    ;[12, 48, 0, 65, 30, 90, 22].forEach((m, i) => { pet.dailyFocus[day(6 - i)] = m })
+    ;[30, 75, 0, 64, 90, 45, 20, 66, 80, 15].forEach((m, i) => { pet.dailyFocus[day(i + 7)] = m })
+    pet.categoryTime = { Coding: 9364, 'Studying & writing': 8, Games: 3998, 'Social media': 158, 'Reels & short-form video': 666, 'YouTube (might be learning, might not)': 374, Other: 81770 }
+    pet.dailyFocus[day(0)] = 42.4; pet.dailyDistraction[day(0)] = 660; pet.dailySessions[day(0)] = 2; pet.dailyTasks[day(0)] = 3; pet.dailyBarks[day(0)] = 2
+    pet.dailyAppTime[day(0)] = { Xcode: 4080, Spotify: 3120, Safari: 1860, Slack: 900, 'instagram.com': 660, Mail: 180, Notes: 90 }
+    pet.siteKinds = { Xcode: 'work', Notes: 'work', 'instagram.com': 'distraction', Spotify: 'neutral', Safari: 'neutral' }
+    pet.dailyAway[day(0)] = 840
+    pet.focusByHour = { 9: 40, 10: 75, 11: 60, 14: 85, 15: 120, 16: 90, 20: 55, 21: 30 }
+    pet.moods[day(0)] = 'cozy'; pet.moods[day(1)] = 'stressed'
+    for (let i = 0; i < 17; i++) pet.dailySessions[day(i + 1)] = 1
+    pet.dailyTasks[day(1)] = 0
+    prefs.set('badges', ['first', 'sess1', 'streak3', 'hour', 'sess5', 'goal1', 'tasks10'])
+  }
+}
+if (q.get('act')) pet.act = q.get('act')
+
+if (q.get('full')) { const st = document.createElement('style'); st.textContent = '.panel{height:auto!important}.scroller{overflow:visible!important;flex:none!important}.tabbar{margin-top:12px}'; document.head.appendChild(st) }
+const base = '../src/renderer/'
+for (const href of ['ui/ui.css', `${page}/${page}.css`]) {
+  const l = document.createElement('link'); l.rel = 'stylesheet'; l.href = base + href; document.head.appendChild(l)
+}
+const { applyTheme } = await import(base + 'theme.js'); applyTheme(prefs.get('theme'))
+await import(base + `${page}/index.js`)
+document.fonts.ready.then(() => { document.body.dataset.ready = '1' })
+</script>
