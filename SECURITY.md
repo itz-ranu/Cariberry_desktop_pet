@@ -7,24 +7,21 @@ Currently, only the latest releases of Cariberry are actively supported with sec
 | Version | Supported          |
 | ------- | ------------------ |
 | >= 1.0.x| :white_check_mark: |
-| < 1.0.x | :x:                |
 
 ## Reporting a Vulnerability
 
-I take the security of Cariberry seriously. If you discover a security vulnerability, I appreciate your help in disclosing it responsibly.
+We take the security of Cariberry seriously. If you discover a security vulnerability, we appreciate your help in disclosing it responsibly.
 
 **Please do not report security vulnerabilities through public GitHub issues.**
 
 Instead, please report them using one of the following methods:
 
 1. **GitHub Private Vulnerability Reporting:** Navigate to the **Security** tab of this repository, select **Advisories**, and click **Report a vulnerability**.
-2. **Email:** Contact the maintainer directly at **ranu.try7@gmail.com**.
+2. **Email:** Contact the maintainer directly at **ranveer.sanghvi.ind@gmail.com**.
 
 ### What to expect
 
-* I will try to acknowledge your report within about 7 days. This is a free hobby project maintained by one person, so these are goals, not guarantees.
-* I will look into the issue and, where I can, share a timeline for addressing it.
-* Please keep the details private until a fix is released.
-* Once the issue is patched, I may publish a security advisory and can credit you for the discovery (if you wish to be credited).
-
-This policy is not a bug bounty and does not offer payment. Good-faith security research that avoids other people's data and stays within the law is welcome.
+* We will acknowledge receipt of your vulnerability report within 72 hours.
+* We will investigate the issue and provide a timeline for addressing it.
+* We ask that you maintain confidentiality until we have released a fix.
+* Once the issue is patched, we will publish a security advisory and can credit you for the discovery (if you wish to be credited).
