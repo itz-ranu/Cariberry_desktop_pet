@@ -22,10 +22,9 @@ guardian's knowledge. The optional online chat services have their own age limit
 
 ## 3. No warranty, and limits on liability
 
-The app is provided **"as is"**, free of charge, without warranty of any kind, as set out in the MIT License. I do not promise
-that it will be error-free, always available, or suitable for your purpose. To the fullest extent the law allows, I am not
-liable for any loss or damage from using the app. Nothing in these terms limits any right or liability that the law does not
-allow to be limited (for example, for fraud, or where you have non-waivable consumer rights).
+**THE APP IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.** To the maximum extent permitted by applicable law, I disclaim all warranties, express or implied, including fitness for a particular purpose or non-infringement. I do not promise that it will be error-free, always available, or suitable for your purpose.
+
+**TO THE FULLEST EXTENT PERMITTED BY LAW, IN NO EVENT SHALL I BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR ANY LOSS OF PROFITS, REVENUES, DATA (INCLUDING LOST WORK), OR USE**, incurred by you or any third party, whether in an action in contract or tort, arising from your access to or use of the app. Nothing in these terms limits liability for fraud or where you have non-waivable consumer rights.
 
 ## 4. Things she can do on your computer
 
@@ -53,11 +52,19 @@ YouTube, OpenAI, ChatGPT, Ollama, Spotify, Instagram, TikTok, Netflix, Discord, 
 independent and is not affiliated with, endorsed by or sponsored by any of them.** All trademarks belong to their owners and
 are used only to say what the app works with.
 
-## 8. Updates, availability and changes
+## 8. Indemnification
+
+You agree to indemnify, defend, and hold harmless the developer (Ranveer Sanghvi) from and against any and all claims, liabilities, damages, losses, costs, expenses, or fees (including reasonable attorneys' fees) that arise from your use of the app, your violation of these terms, or your violation of any rights of a third party (including third-party AI providers).
+
+## 9. Governing Law and Severability
+
+These terms shall be governed by and construed in accordance with the laws of India, without regard to its conflict of law principles. Any legal action or proceeding arising out of or related to these terms shall be brought exclusively in the courts located in India. If any provision of these terms is held to be invalid or unenforceable, the remaining provisions will remain in full force and effect.
+
+## 10. Updates, availability and changes
 
 I may change or stop the app, or change these terms, at any time. The date above shows the latest version, and the history is
 public in the repository. Continued use after a change means you accept it.
 
-## 9. Contact
+## 11. Contact
 
 Issues: <https://github.com/itz-ranu/Cariberry/issues>. Email: ranu.try7@gmail.com.

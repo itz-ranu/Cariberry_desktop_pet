@@ -39,6 +39,7 @@ These features read information on your computer, process it **in memory only**,
 | "Bop to my music" (can be switched off) | the loudness and beat of the sound your computer is playing | she does not record, keep or listen to the content; Mac asks for **Screen Recording** permission because that is how macOS exposes system audio |
 | "Hey Cranberry" voice (Mac, optional) | your microphone | processed on your Mac by Apple's on-device speech recognition; audio is not recorded, saved or sent. If your Mac cannot recognise speech on-device, voice stays off |
 | Cursor and app control (Mac) | where apps are in the Dock | used only to open or close the app you ask for |
+| Any other local data | system events, files, inputs | processed entirely locally on your device; never uploaded unless explicitly sent to a third-party AI provider chosen by you |
 
 You can refuse or later withdraw any of these permissions in your system settings; she keeps working without them.
 
@@ -69,17 +70,21 @@ machine.
 - The README on GitHub shows images from third-party services (badges and banners). Your browser, via GitHub, may request
   them; see those services for their policies.
 
-## 6. Your rights
+## 6. Support and Contact Data
 
-Because I hold no personal data about you, there is nothing for me to look up, correct or delete. Everything the app keeps is
+If you contact me for support via email or GitHub, you voluntarily provide your email address, GitHub username, and any other data you include in your message. This data is used exclusively to assist you and resolve your issue. It is not used for marketing, shared with third parties, or added to any mailing list.
+
+## 7. Your rights
+
+Because I hold no personal data about you other than direct support correspondence, there is nothing for me to look up, correct or delete centrally. Everything the app keeps is
 in the folder described in section 2 and under your control. If you are in the EU/UK, California or elsewhere with privacy
 laws, you keep every right you have; write to me if you think I hold something about you and I will answer.
 
-## 7. Security
+## 8. Security
 
 I take care to keep keys encrypted and to request only the permissions the features need. No software is perfect: report
 problems via [SECURITY.md](SECURITY.md).
 
-## 8. Changes
+## 9. Changes
 
 If this changes I will update the date above and note it in the release notes. The history is public in the repository.
