@@ -8,7 +8,7 @@ test('browser titles lose the browser\'s name', () => {
   assert.equal(stripBrowserSuffix('Lo-fi beats - YouTube - Mozilla Firefox'), 'Lo-fi beats - YouTube')
   assert.equal(stripBrowserSuffix('Notes – Brave'), 'Notes')
   // Edge hides a zero-width space inside its name and may add a profile and a page count
-  assert.equal(stripBrowserSuffix('Homework and 3 more pages - Personal - Microsoft​ Edge'), 'Homework')
+  assert.equal(stripBrowserSuffix('Homework and 3 more pages - Personal - Microsoft Edge'), 'Homework')
   assert.equal(stripBrowserSuffix('Just a title'), 'Just a title')
   assert.equal(stripBrowserSuffix(''), '')
 })

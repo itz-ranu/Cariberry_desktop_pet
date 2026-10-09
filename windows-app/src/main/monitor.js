@@ -88,7 +88,7 @@ class AddressReader {
       const file = path.join(this.dir, 'address-reader.ps1')
       fs.mkdirSync(this.dir, { recursive: true })
       // a UTF-8 BOM so Windows PowerShell reads the file as UTF-8
-      fs.writeFileSync(file, '﻿' + UIA_SCRIPT)
+      fs.writeFileSync(file, '' + UIA_SCRIPT)
       const p = spawn(win32.powershellPath(), ['-NoLogo', '-NoProfile', '-NonInteractive', '-ExecutionPolicy', 'Bypass', '-File', file],
         { windowsHide: true, stdio: ['pipe', 'pipe', 'ignore'] })
       p.stdout.setEncoding('utf8')

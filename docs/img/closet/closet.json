@@ -1,0 +1,167 @@
+[
+  {
+    "id" : "rugCoquette",
+    "title" : "Ribbon rug",
+    "slot" : "rug"
+  },
+  {
+    "slot" : "rug",
+    "title" : "Leaf rug",
+    "id" : "rugCottage"
+  },
+  {
+    "id" : "rugY2K",
+    "title" : "Heart rug",
+    "slot" : "rug"
+  },
+  {
+    "slot" : "rug",
+    "id" : "rugCyber",
+    "title" : "Glow rug"
+  },
+  {
+    "id" : "auraSparkles",
+    "title" : "Sparkles",
+    "slot" : "aura"
+  },
+  {
+    "title" : "Hearts",
+    "slot" : "aura",
+    "id" : "auraHearts"
+  },
+  {
+    "title" : "Stars",
+    "slot" : "aura",
+    "id" : "auraStars"
+  },
+  {
+    "id" : "knitSweater",
+    "title" : "Knit sweater",
+    "slot" : "body"
+  },
+  {
+    "title" : "Hoodie",
+    "id" : "hoodie",
+    "slot" : "body"
+  },
+  {
+    "id" : "angelWings",
+    "title" : "Angel wings",
+    "slot" : "body"
+  },
+  {
+    "title" : "Cape",
+    "slot" : "body",
+    "id" : "cape"
+  },
+  {
+    "slot" : "neck",
+    "id" : "scarf",
+    "title" : "Scarf"
+  },
+  {
+    "id" : "bandana",
+    "slot" : "neck",
+    "title" : "Bandana"
+  },
+  {
+    "title" : "Pearls",
+    "slot" : "neck",
+    "id" : "pearls"
+  },
+  {
+    "title" : "Bell",
+    "slot" : "neck",
+    "id" : "bell"
+  },
+  {
+    "id" : "bowtie",
+    "slot" : "neck",
+    "title" : "Bow tie"
+  },
+  {
+    "slot" : "face",
+    "id" : "glasses",
+    "title" : "Glasses"
+  },
+  {
+    "id" : "sunglasses",
+    "title" : "Shades",
+    "slot" : "face"
+  },
+  {
+    "id" : "heartGlasses",
+    "title" : "Hearts",
+    "slot" : "face"
+  },
+  {
+    "title" : "Lashes",
+    "slot" : "face",
+    "id" : "lashes"
+  },
+  {
+    "id" : "crown",
+    "slot" : "head",
+    "title" : "Crown"
+  },
+  {
+    "id" : "headphones",
+    "title" : "Headphones",
+    "slot" : "head"
+  },
+  {
+    "slot" : "head",
+    "id" : "yuzu",
+    "title" : "Yuzu"
+  },
+  {
+    "id" : "beret",
+    "title" : "Beret",
+    "slot" : "head"
+  },
+  {
+    "slot" : "head",
+    "title" : "Party hat",
+    "id" : "partyHat"
+  },
+  {
+    "title" : "Halo",
+    "id" : "halo",
+    "slot" : "head"
+  },
+  {
+    "title" : "Bow",
+    "id" : "bow",
+    "slot" : "hair"
+  },
+  {
+    "id" : "flower",
+    "slot" : "hair",
+    "title" : "Flower"
+  },
+  {
+    "slot" : "hair",
+    "title" : "Star clip",
+    "id" : "starClip"
+  },
+  {
+    "title" : "Boba",
+    "slot" : "held",
+    "id" : "boba"
+  },
+  {
+    "title" : "Matcha",
+    "slot" : "held",
+    "id" : "matcha"
+  },
+  {
+    "id" : "book",
+    "slot" : "held",
+    "title" : "Book"
+  },
+  {
+    "id" : "console",
+    "title" : "Game",
+    "slot" : "held"
+  }
+]
