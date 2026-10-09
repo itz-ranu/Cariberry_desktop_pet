@@ -11,7 +11,7 @@ Currently, only the latest releases of Cariberry are actively supported with sec
 
 ## Reporting a Vulnerability
 
-I take the security of Cariberry seriously. If you discover a security vulnerability, we appreciate your help in disclosing it responsibly.
+I take the security of Cariberry seriously. If you discover a security vulnerability, I appreciate your help in disclosing it responsibly.
 
 **Please do not report security vulnerabilities through public GitHub issues.**
 

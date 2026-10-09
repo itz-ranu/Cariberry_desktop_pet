@@ -22,7 +22,7 @@ licence. The full licence texts ship with the app and are kept in this repositor
 - **Windows app**: Electron and Chromium (MIT, BSD and others), koffi (MIT).
 - **Fonts** (all SIL Open Font License 1.1): Nunito, Patrick Hand (Windows app); Bagel Fat One, Caveat Brush, Figtree and
   Bricolage Grotesque (website).
-- **Website**: React, three.js, @react-three/fiber, Lenis, Zustand and others (MIT).
+- **Website**: React, Lenis, Zustand and others (MIT).
 - **Emoji art in the README**: [Animated Fluent Emojis](https://github.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis) by
   Tarikul Islam Anik, based on Microsoft Fluent Emoji (MIT).
 - Her voices and the lo-fi music are made by Cariberry's own synthesiser, not recorded or sampled. The pets are drawn in code.
