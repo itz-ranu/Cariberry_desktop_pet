@@ -1,14 +1,14 @@
 # 🍏 Cariberry for macOS Download & Installation
 
 <p align="center">
-  <a href="https://github.com/itz-ranu/Cariberry/releases/latest/download/Cariberry.dmg">
+  <a href="https://github.com/itz-ranu/Cariberry_desktop_pet/raw/main/macos/Cariberry.dmg">
     <img src="https://img.shields.io/badge/Download%20Cariberry.dmg-macOS%2014%2B-ff69b4?style=for-the-badge&logo=apple&logoColor=white" alt="Download Cariberry.dmg">
   </a>
 </p>
 
 ### 🌸 3-Step Installation Guide:
 
-1. **Download the installer**: Click the button above or download [`Cariberry.dmg`](https://github.com/itz-ranu/Cariberry/releases/latest/download/Cariberry.dmg).
+1. **Download the installer**: Click the button above or download [`Cariberry.dmg`](https://github.com/itz-ranu/Cariberry_desktop_pet/raw/main/macos/Cariberry.dmg).
 2. **Open the DMG**: Double-click `Cariberry.dmg`. A window will open showing the **Cariberry** app icon and your **Applications** folder shortcut.
 3. **Drag & Drop**: Drag **Cariberry** into the **Applications** folder!
 4. **Launch**: Open your Applications folder and click **Cariberry**. Your cute pet will appear at the bottom of your screen! 🐾
@@ -16,7 +16,7 @@
 ---
 
 ### 💡 First-Time Launch Tip:
-* Cariberry isn't notarized by Apple yet. If macOS says it can't verify the app, right-click it in Applications, choose **Open**, then **Open** again (or use System Settings ➔ Privacy & Security ➔ **Open Anyway**). Compare the SHA-256 with the one on the website first.
+* Cariberry isn't notarized by Apple yet. If macOS says it can't verify the app, right-click it in Applications, choose **Open**, then **Open** again (or use System Settings ➔ Privacy & Security ➔ **Open Anyway**). Compare the SHA-256 with [`Cariberry.dmg.sha256`](Cariberry.dmg.sha256) in this folder first.
 * She does not start with your Mac unless you ask: to have her on your desktop every time your Mac starts, open Cariberry, right-click her (or click her menu bar icon), go to **Settings ➔ Launch at login**, and turn it ON.
 
 ---
