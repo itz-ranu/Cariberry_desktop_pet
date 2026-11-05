@@ -22,6 +22,8 @@ demo*.mp4
 .github/
 
 # Build artifacts & local environments
+.env*
+*.env
 .DS_Store
 .build/
 .swiftpm/
