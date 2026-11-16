@@ -1,11 +1,11 @@
 {
   "latestVersion": "1.1.0",
-  "minRequiredVersion": "1.1.0",
+  "minRequiredVersion": "1.0.0",
   "gracePeriodDays": 17,
   "deadline": "2026-12-03",
   "mandatoryAfter": "2026-12-03T23:59:59Z",
   "updateUrl": "https://github.com/itz-ranu/Cariberry_desktop_pet",
   "downloadMac": "https://github.com/itz-ranu/Cariberry_desktop_pet/raw/main/macos/Cariberry.dmg",
   "downloadWin": "https://github.com/itz-ranu/Cariberry_desktop_pet/raw/main/windows/CariberrySetup.exe",
-  "message": "Cariberry v1.1.0 is here! ✨ You have 17 days to update (deadline: Dec 3, 2026) to get the new colour coats and UI/UX upgrades."
+  "message": "Cariberry v1.1.0 is available! You have 17 days to update (deadline: Dec 3, 2026). To install, quit Cariberry from the top menu bar / tray icon, then open the new installer."
 }
