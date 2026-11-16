@@ -1,6 +1,11 @@
 {
-  "latestVersion": "1.0.0",
+  "latestVersion": "1.1.0",
   "minRequiredVersion": "1.0.0",
-  "updateUrl": "https://github.com/itz-ranu/Cariberry_desktop_pet/releases/latest",
-  "message": "Cariberry has a mandatory update! Please update to continue hanging out with your pet."
+  "gracePeriodDays": 17,
+  "deadline": "2026-12-03",
+  "mandatoryAfter": "2026-12-03T23:59:59Z",
+  "updateUrl": "https://github.com/itz-ranu/Cariberry_desktop_pet",
+  "downloadMac": "https://github.com/itz-ranu/Cariberry_desktop_pet/raw/main/macos/Cariberry.dmg",
+  "downloadWin": "https://github.com/itz-ranu/Cariberry_desktop_pet/raw/main/windows/CariberrySetup.exe",
+  "message": "Cariberry v1.1.0 is here with rich new colour coats & UI/UX polish! You have 17 days to update before this version becomes mandatory."
 }

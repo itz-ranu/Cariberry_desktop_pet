@@ -15,14 +15,25 @@
       <a href="https://github.com/itz-ranu/Cariberry_desktop_pet/raw/main/macos/Cariberry.dmg">
         <img src="https://img.shields.io/badge/Download_for_Mac-FFB6C1?style=for-the-badge&logo=apple&logoColor=white" alt="Mac Download" height="50">
       </a>
+      <br>
+      <a href="https://raw.githubusercontent.com/itz-ranu/Cariberry_desktop_pet/main/macos/Cariberry.dmg"><sub>Direct Mirror (3.4 MB)</sub></a>
     </td>
     <td align="center" style="border: none; padding: 0 15px; background: transparent;">
       <a href="https://github.com/itz-ranu/Cariberry_desktop_pet/raw/main/windows/CariberrySetup.exe">
         <img src="https://img.shields.io/badge/Download_for_Windows-87CEFA?style=for-the-badge&logo=windows&logoColor=white" alt="Windows Download" height="50">
       </a>
+      <br>
+      <a href="https://raw.githubusercontent.com/itz-ranu/Cariberry_desktop_pet/main/windows/CariberrySetup.exe"><sub>Direct Mirror (124 MB)</sub></a>
     </td>
   </tr>
 </table>
+
+<br>
+<div align="center">
+  <span style="background: #ffecf2; border: 2px solid #ff4f8b; border-radius: 20px; padding: 6px 16px; font-weight: bold; color: #1e1226; font-size: 14px;">
+    🌸 <b>Cariberry v1.1.0 is here!</b> All existing users have <b>17 days to update</b> (until Dec 3, 2026) to enjoy new colour coats and UI/UX upgrades!
+  </span>
+</div>
 
 <br>
 
